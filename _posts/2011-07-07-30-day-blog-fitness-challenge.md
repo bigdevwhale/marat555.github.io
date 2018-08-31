@@ -64,10 +64,10 @@ write crap and no one will notice.
 
 And so, dear reader(s), prepare yourselves for 29 more consecutive days of 
 blog posts, featuring exciting topics ranging from 
-[Crossfit](https://www.ybrikman.com/writing/2008/12/16/tribute-to-crossfit/), to 
+[Crossfit](https://it.badykov.com/writing/2008/12/16/tribute-to-crossfit/), to 
 [game 
-mechanics](https://www.ybrikman.com/writing/2011/04/24/why-game-mechanics-wont-save-your/), 
+mechanics](https://it.badykov.com/writing/2011/04/24/why-game-mechanics-wont-save-your/), 
 to [open source 
-software](https://www.ybrikman.com/writing/2011/04/14/open-source/). Oh, and 
+software](https://it.badykov.com/writing/2011/04/14/open-source/). Oh, and 
 burpees. 
 

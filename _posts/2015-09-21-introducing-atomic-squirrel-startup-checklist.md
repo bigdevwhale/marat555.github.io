@@ -12,7 +12,7 @@ hello_startup_url: https://www.hello-startup.net/?ref=ybrikman-launch-post
 
 **Update**: Atomic Squirrel has merged with Phoenix DevOps into a new company called
 [Gruntwork](https://www.gruntwork.io/?ref=ybrikman-introducing-atomic-squirrel)! Check out the [Introducing
-Gruntwork](https://www.ybrikman.com/writing/2016/04/25/introducing-gruntwork-up-and-running-aws-2-weeks/) blog post for
+Gruntwork](https://it.badykov.com/writing/2016/04/25/introducing-gruntwork-up-and-running-aws-2-weeks/) blog post for
 more info!
 
 For the last several months, I've been working on a new project: my own company.

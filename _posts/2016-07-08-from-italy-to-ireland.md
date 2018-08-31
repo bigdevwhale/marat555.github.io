@@ -13,7 +13,7 @@ with stops at the [Bonneville Salt Flats](https://goo.gl/photos/bwvNiSDERrmiaBdr
 Teton](https://goo.gl/photos/UB476Xvp8NwjtM1W7), [Yellowstone](https://goo.gl/photos/xvN75XBhqgeznCS39), [Devil's
 Tower](https://goo.gl/photos/Hy8Bf62NNaK2psV39), the [Badlands](https://goo.gl/photos/G3LW6fq21oxynk6QA), and
 [Chicago](https://goo.gl/photos/ZfEkY7TkhM6DdKoJ9); and then we moved to
-[Italy](https://www.ybrikman.com/writing/2015/07/08/from-california-to-italy/).
+[Italy](https://it.badykov.com/writing/2015/07/08/from-california-to-italy/).
 
 The craziness continues this year. Molly got a job at [Trinity College in Dublin](https://www.tcd.ie/), so the two of
 us are moving to Ireland.
@@ -22,8 +22,8 @@ us are moving to Ireland.
 
 In preparation, we watched [Father Ted](https://en.wikipedia.org/wiki/Father_Ted), twice, and now we are fecking ready
 for this next adventure. But first, I must say goodbye the same way as I did when I [left
-LinkedIn](https://www.ybrikman.com/writing/2014/04/02/so-long-and-thanks-for-all-t-shirts/) and when I [moved out of
-California](https://www.ybrikman.com/writing/2015/07/08/from-california-to-italy/): with some photo memories.
+LinkedIn](https://it.badykov.com/writing/2014/04/02/so-long-and-thanks-for-all-t-shirts/) and when I [moved out of
+California](https://it.badykov.com/writing/2015/07/08/from-california-to-italy/): with some photo memories.
 
 Thank you Italy for one of the most fun years of my life.
 
