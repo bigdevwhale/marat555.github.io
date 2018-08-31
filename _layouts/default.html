@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html lang="en-us" class="no-js">
-
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
   {% include head.html %}
-
-  <body>
-    {% if page.url != '/index.html' %}
-      <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-      {% include sidebar-nav.html %}
-      {% include menu.html %}
-    {% endif %}
-
+</head>
+<body>
+  {% include nav.html %}
+  {% if page.include_header %}
+    {% include header.html include_header=page.include_header %}
+  {% elsif layout.include_header %}
+    {% include header.html include_header=layout.include_header %}
+  {% endif %}
+  <main class="container block p3">
     {{ content }}
-
-    {% if page.url != '/index.html' %}
-      {% include sidebar-toggle.html %}
-    {% endif %}
-
-    {% if page.url == '/index.html' %}
-      {% include subscribe.html %}
-      {% include footer.html %}
-    {% endif %}
-
-    {% include footer-scripts.html %}
-  </body>
+  </main>
+  {% if layout.bottom_include %}
+    {% include {{ layout.bottom_include }} %}
+  {% endif %}
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
 </html>

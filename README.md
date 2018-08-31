@@ -1,131 +1,73 @@
-# Mickey
+# Yevgeniy Brikman Home Page
 
-Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
+This is the code for the [Yevgeniy Brikman Home Page](https://www.ybrikman.com).
 
-It's inspired by [Hyde](http://hyde.getpoole.com), [Medium](http://medium.com), and [Squarespace](http://squarespace.com).
+![Yevgeniy Brikman Home Page Screenshot](/assets/img/screenshots/ybrikman-homepage-screenshot.png)
 
-![Mickey screenshots](/assets/images/demo.png)
+I wanted a clean, simple home page where I could put my writing, speaking,
+projects, and photos. It had to be fast, mobile-friendly, free to build, and
+easy to update. This is the result. Forks and pull requests are welcome!
 
-See Mickey in action with [the demo site](http://vincentchan.github.io/mickey) or [my personal blog](http://aneverendingdream.com).
+Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](https://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)
+for background info.
 
-## Contents
 
-- [Installation](#installation)
-- [Options](#options)
-  - [Post front matter](#post-front-matter)
-  - [Identity](#identity)
-  - [Typography](#typography)
-  - [Images](#images)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
 
-## Installation
 
-Mickey requires [Jekyll](http://jekyllrb.com/) 2.x. and [Gulp](http://gulpjs.com/) for workflow automation.
+## Quick start
 
-Make sure to run `gem update jekyll` if you aren’t on the latest version or `gem install jekyll` if this is your first time installing it.
+1. Use Git to clone this repo.
+1. Make sure you have [Jekyll](http://jekyllrb.com/docs/installation/) installed.
+1. Just the first time: `bundle install`.
+1. To build the site and serve it: `bundle exec jekyll serve`.
+1. To test: `http://localhost:4000`.
 
-If you want to use Mickey, please follow these steps:
+See the [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
+documentation for more info.
 
-1. Fork the [Mickey](https://github.com/vincentchan/mickey) repo.
-2. Clone the repo you just forked and rename it.
-3. Run `npm install` to install the dependencies for the theme contained in `package.json`
-4. Update `_config.yml` with your own info and replace demo posts and pages with your own. Full details below.
 
-## Options
 
-Mickey includes some customizable options:
 
-### Post front matter
+## Docker quick start
 
-By default, we use the following:
+As an alternative to installing Ruby and Jekyll, if you're a user of
+[Docker](https://www.docker.com/), you can run a Docker image of
+yevgeniy-brikman-homepage that has all the dependencies already setup for you.
 
-```
----
-layout:           post
-title:            "your post title"
-date:             2015-02-11T13:04:19+05:45 # XML Schema Date/Time
-last_modified_at: 2015-03-15T05:20:00+05:45 # last page modified date/time
-excerpt:          "for meta description" # Optional for overwriting content excerpt
-categories:       your post categories # ["category1"] - best is to have one category in a post
-tags:             your post tags # ["tag1", "tag2", "tag3"] - you can have several post tags
-image:
-  feature: your post featured image file name # image.jpg, suggested size:  2000x700px
-  topPosition: 0px # top position for featured image if needed
-bgContrast: dark # Featured image contrast
-bgGradientOpacity: darker # darker or lighter - control featured image opacity
----
-```
+1. `git clone` this repo
+2. `docker-compose up`
+3. Go to `http://localhost:4000` to test
 
-### Identity
 
-To replace logos with your own, simply update the following files in `assets/images/`:
 
-- `logo-white.svg`
-- `logo-black.svg`
-- `logo-text-white.svg`
-- `logo-text-black.svg`
 
-### Typography
+## Technologies
 
-Vertical rhythm and spacing are mostly handled by [typebase.css](http://devinhunt.github.io/typebase.css/). If you want to change any settings related to typography (e.g. fonts, type scale...etc), please do it in `_scss/_typography.scss`
+1. Built with [Jekyll](http://jekyllrb.com/). This website is completely static
+   and I use basic HTML or Markdown for everything.
+1. Hosted on [GitHub Pages](https://pages.github.com/). I'm using the
+   [GitHub Pages Gem](https://help.github.com/articles/using-jekyll-with-pages/)
+   and only Jekyll plugins that are
+   [available on GitHub Pages](https://help.github.com/articles/repository-metadata-on-github-pages/).
+1. Free SSL and CDN provided by [CloudFlare](https://www.cloudflare.com/).    
+1. The design is loosely based on [Kasper](https://github.com/rosario/kasper),
+   [Pixyll](http://pixyll.com/), and [Medium](https://medium.com/).
+1. I used [Basscss](http://www.basscss.com/), [Sass](http://sass-lang.com/),
+   [Font Awesome Icons](http://fortawesome.github.io/Font-Awesome/icons/),
+   [Hint.css](http://kushagragour.in/lab/hint/),and
+   [Google Fonts](https://www.google.com/fonts) for styling.
+1. I used [jQuery](https://jquery.com/), [lazySizes](http://afarkas.github.io/lazysizes/),
+   and [responsive-nav.js](http://responsive-nav.com/) for behavior.
+1. I added [Disqus](https://disqus.com/websites/) as a commenting system.
+1. I'm using [UptimeRobot](http://uptimerobot.com/) and
+   [Google Analytics](http://www.google.com/analytics/) for monitoring and
+   metrics.
+1. Most of the blog posts were imported from my old Blogger account, so there
+   are a few hacky Ruby scripts in `_scripts` left over from that migration.
 
-#### Blockquote
 
-We have two types of blockquote design:
-
-```html
-// For large featured quote
-<blockquote class="largeQuote">...</blockquote>
-
-// For normal quote
-// Use 'u--startsWithDoubleQuote' class only when the quote starts with a double quote
-<blockquote class="u--startsWithDoubleQuote"></blockquote>
-```
-
-#### Hanging quotes
-
-If a paragraph starts with a quotation market, please add the following to support [hanging quotes](https://en.wikipedia.org/wiki/Hanging_punctuation):
-
-```html
-<p class="u--startsWithDoubleQuote">
-...
-</p>
-```
-
-### Images
-
-To maintain vertical rhythm and spacing, I suggest using the following CSS class (e.g. `img--5xLeading`...`img--16xLeading`) to control the image height:
-
-```html
-<div class="img img--fullContainer img--14xLeading" style="background-image: url();"></div>
-```
-
-You can reference `_scss/_images.scss` for details.
-
-## Development
-
-Mickey has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted landing page. **Please avoid using this branch.**
-
-During development, simply run `gulp` in terminal and it will compile the jekyll site, compile Sass, create post thumbnails, launch BrowserSync & watch files for changes and recompile.
-
-Source Sass files are located in `_scss/`, included into `main.scss`, and compile to `assets/css/main.css`.
-
-Post thumbnails are automatically resized via Gulp's image resize package, and moved to `assets/images/thumbnails`. Any featured images you put in `assets/images/hero` will be automatically created
-
-## Author
-
-**Vincent Chan**
-- <https://github.com/vincentchan>
-- <https://twitter.com/vincentchan>
 
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
-
-**Disclaimer: This Jekyll theme is not affiliated with Disney. Obviously :)**
+This code is released under the MIT License. See LICENSE.txt.

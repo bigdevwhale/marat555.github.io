@@ -1,19 +1,13 @@
-<footer class="section--footer">
-  <div class="container container--content">
-    <div>
-      <a href="{{ site.baseurl }}humans.txt">Hand-crafted</a> by <a href="{{ site.baseurl }}about/">Your Name</a>
-    </div>
-    <ul class="socialAccountList">
-      <li><a href="http://twitter.com/{{ site.author.twitter }}" class="socialAccount socialAccount--twitter" target="_blank"></a></li>
-      <li><a href="http://facebook.com/{{ site.author.facebook }}" class="socialAccount socialAccount--facebook" target="_blank"></a></li>
-      <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="socialAccount socialAccount--linkedin" target="_blank"></a></li>
-      <li><a href="http://dribbble.com/{{ site.author.dribble }}" class="socialAccount socialAccount--dribbble" target="_blank"></a></li>
-      <li><a href="https://www.pinterest.com/{{ site.author.pinterest }}/" class="socialAccount socialAccount--pinterest" target="_blank"></a></li>
-      <li><a href="http://www.kiva.org/lender/{{ site.author.kiva }}" class="socialAccount socialAccount--kiva" target="_blank"></a></li>
-      <li><a href="{{ site.rss }}" class="socialAccount socialAccount--rss" target="_blank"></a></li>
-    </ul>
-    <div>
-      © 2015 All Rights Reserved. Powered by the <a href="https://github.com/vincentchan/mickey" target="_blank">Mickey theme</a> for Jekyll.
-    </div>
+<footer class="sticky-footer border-top border-light-gray gray h6">
+  <div class="sm-col px2">
+    &copy; {{ site.time | date: "%Y" }} {{ site.name }}.    
+  </div>
+  <div class="sm-col-right px2">
+    {% for external_url_hash in site.contact_urls %}
+      {% assign external_url = external_url_hash[1] %}
+      <a href="{{ external_url.url }}" target="_blank" class="gray hint--top" data-hint="{{ external_url.label }}">
+        <i class="fa fa-fw fa-lg fa-{{ external_url.icon }}"></i>
+      </a>
+    {% endfor %}
   </div>
 </footer>
