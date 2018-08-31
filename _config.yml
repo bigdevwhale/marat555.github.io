@@ -35,7 +35,7 @@ contact_urls:
   email:
     url: "maratcool@mail.ru"
     label: "Email"
-    value: "maratcool@mail.ru"
+    value: "mailto:maratcool@mail.ru"
     icon: "envelope-square"
 
 # Jekyll build settings
