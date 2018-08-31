@@ -1,33 +1,26 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
 
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+  {% include head.html %}
 
   <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% if page.url != '/index.html' %}
+      <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+      {% include sidebar-nav.html %}
+      {% include menu.html %}
+    {% endif %}
 
     {{ content }}
 
-    </script>
+    {% if page.url != '/index.html' %}
+      {% include sidebar-toggle.html %}
+    {% endif %}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+    {% if page.url == '/index.html' %}
+      {% include subscribe.html %}
+      {% include footer.html %}
+    {% endif %}
 
-    {% include scripts.html %}
-
+    {% include footer-scripts.html %}
   </body>
 </html>

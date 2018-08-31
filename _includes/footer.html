@@ -1,24 +1,19 @@
-{% include base_path %}
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/marat555.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<footer class="section--footer">
+  <div class="container container--content">
+    <div>
+      <a href="{{ site.baseurl }}humans.txt">Hand-crafted</a> by <a href="{{ site.baseurl }}about/">Your Name</a>
+    </div>
+    <ul class="socialAccountList">
+      <li><a href="http://twitter.com/{{ site.author.twitter }}" class="socialAccount socialAccount--twitter" target="_blank"></a></li>
+      <li><a href="http://facebook.com/{{ site.author.facebook }}" class="socialAccount socialAccount--facebook" target="_blank"></a></li>
+      <li><a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" class="socialAccount socialAccount--linkedin" target="_blank"></a></li>
+      <li><a href="http://dribbble.com/{{ site.author.dribble }}" class="socialAccount socialAccount--dribbble" target="_blank"></a></li>
+      <li><a href="https://www.pinterest.com/{{ site.author.pinterest }}/" class="socialAccount socialAccount--pinterest" target="_blank"></a></li>
+      <li><a href="http://www.kiva.org/lender/{{ site.author.kiva }}" class="socialAccount socialAccount--kiva" target="_blank"></a></li>
+      <li><a href="{{ site.rss }}" class="socialAccount socialAccount--rss" target="_blank"></a></li>
+    </ul>
+    <div>
+      © 2015 All Rights Reserved. Powered by the <a href="https://github.com/vincentchan/mickey" target="_blank">Mickey theme</a> for Jekyll.
+    </div>
+  </div>
+</footer>
