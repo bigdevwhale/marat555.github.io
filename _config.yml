@@ -4,11 +4,8 @@ url: "https://it.badykov.com"
 # Internal nav
 nav:
   main:
-    writing: "/writing"
-    speaking: "/speaking"
-    projects: "/projects"
-    photos: "/photos"
-  writing:
+    blog: "/blog"
+  blog:
     all: "/writing"
     popular: "/writing/popular"
     tags: "/writing/tags"
