@@ -2,7 +2,7 @@
 layout: post
 title: Six programming paradigms that will change how you think about coding
 date: '2014-04-09T11:58:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Software Engineering
 modified_time: '2014-05-17T14:37:36.165-07:00'

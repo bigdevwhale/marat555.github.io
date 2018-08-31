@@ -2,7 +2,7 @@
 layout: post
 title: My life goals
 date: '2010-01-28T23:55:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Goals
 modified_time: '2011-08-06T14:49:01.369-07:00'

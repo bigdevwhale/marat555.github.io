@@ -2,7 +2,7 @@
 layout: post
 title: 3 more web development tools you've probably never heard of
 date: '2011-07-21T01:46:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Web Dev
 modified_time: '2011-08-06T14:40:42.674-07:00'

@@ -2,7 +2,7 @@
 layout: post 
 title: The search for the perfect PDA phone 
 date: '2007-10-31T12:34:00.001-07:00' 
-author: Yevgeniy Brikman 
+author: Marat Badykov 
 tags: 
 - Gadgets 
 modified_time: '2011-08-06T15:11:18.054-07:00' 

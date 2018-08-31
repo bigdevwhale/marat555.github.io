@@ -2,7 +2,7 @@
 layout: post
 title: How I lost 43lbs
 date: '2008-12-17T08:56:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Nutrition
 - Health and Fitness

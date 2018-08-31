@@ -2,7 +2,7 @@
 layout: post
 title: Got slow download but fast upload speeds over wireless? Here's a fix.
 date: '2012-02-19T00:30:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 modified_time: '2014-09-03T08:02:36.239-07:00'

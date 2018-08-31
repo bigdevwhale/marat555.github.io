@@ -2,7 +2,7 @@
 layout: post
 title: Light reading for heavy lifting
 date: '2011-08-09T01:42:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Health and Fitness

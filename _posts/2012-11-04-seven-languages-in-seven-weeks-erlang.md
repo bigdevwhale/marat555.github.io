@@ -2,7 +2,7 @@
 layout: post
 title: 'Seven Languages in Seven Weeks&#58; Erlang, Day 1'
 date: '2012-11-04T18:53:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Seven Languages in Seven Weeks
 modified_time: '2012-11-04T20:32:00.538-08:00'

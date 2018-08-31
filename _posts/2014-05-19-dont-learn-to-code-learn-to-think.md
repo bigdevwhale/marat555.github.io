@@ -2,7 +2,7 @@
 layout: post
 title: Don't learn to code. Learn to think.
 date: '2014-05-19T12:42:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Philosophy
 - Learning

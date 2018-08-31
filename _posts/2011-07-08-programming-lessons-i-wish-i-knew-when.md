@@ -2,7 +2,7 @@
 layout: post
 title: Programming lessons I wish I knew when I graduated, part 1
 date: '2011-07-08T20:06:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Software Engineering

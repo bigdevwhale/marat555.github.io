@@ -2,7 +2,7 @@
 layout: post
 title: 5 reasons everyone should watch the Crossfit Games
 date: '2011-07-24T02:40:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Crossfit
 - Health and Fitness

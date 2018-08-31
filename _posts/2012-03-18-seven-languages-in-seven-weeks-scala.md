@@ -2,7 +2,7 @@
 layout: post
 title: 'Seven Languages in Seven Weeks&#58; Scala, Day 1'
 date: '2012-03-18T00:50:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Seven Languages in Seven Weeks
 modified_time: '2012-03-19T00:43:31.993-07:00'

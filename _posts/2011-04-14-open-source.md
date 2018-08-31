@@ -2,7 +2,7 @@
 layout: post
 title: I finally understand open source software
 date: '2011-04-14T01:57:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Open Source
 - Software Engineering

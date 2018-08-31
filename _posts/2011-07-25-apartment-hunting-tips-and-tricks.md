@@ -2,7 +2,7 @@
 layout: post
 title: Apartment hunting tips and tricks
 date: '2011-07-25T02:13:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Home

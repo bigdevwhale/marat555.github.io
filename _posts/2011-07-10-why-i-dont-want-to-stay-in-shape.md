@@ -2,7 +2,7 @@
 layout: post
 title: Why I don't want to stay in shape
 date: '2011-07-10T23:07:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Health and Fitness
 modified_time: '2011-08-06T14:44:22.388-07:00'

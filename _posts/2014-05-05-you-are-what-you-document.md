@@ -2,7 +2,7 @@
 layout: post
 title: You are what you document
 date: '2014-05-05T08:53:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Software Engineering
 modified_time: '2014-05-17T14:34:49.495-07:00'

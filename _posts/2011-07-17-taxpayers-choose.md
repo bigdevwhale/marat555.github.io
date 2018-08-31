@@ -2,7 +2,7 @@
 layout: post
 title: TaxPayers choose
 date: '2011-07-17T00:02:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Ideas
 - LinkedIn

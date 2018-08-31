@@ -2,7 +2,7 @@
 layout: post
 title: 'Travel quirks, part 1&#58; signs, billboards and writings'
 date: '2011-07-18T01:59:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Travel
 modified_time: '2011-08-06T14:41:03.426-07:00'

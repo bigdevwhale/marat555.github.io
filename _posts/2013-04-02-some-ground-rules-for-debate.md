@@ -2,7 +2,7 @@
 layout: post
 title: Some ground rules for debate
 date: '2013-04-02T12:15:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Writing
 - Philosophy

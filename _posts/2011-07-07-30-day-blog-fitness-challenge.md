@@ -2,7 +2,7 @@
 layout: post
 title: The 30 day blog fitness challenge
 date: '2011-07-07T10:47:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Writing
 modified_time: '2015-03-28T13:19:14.576-07:00'

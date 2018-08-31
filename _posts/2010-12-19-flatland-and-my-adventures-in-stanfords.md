@@ -2,7 +2,7 @@
 layout: post
 title: Flatland and my adventures in Stanford's libraries
 date: '2010-12-19T02:57:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Writing
 - Humor

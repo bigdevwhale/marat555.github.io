@@ -2,7 +2,7 @@
 layout: post
 title: The 10x developer is NOT a myth
 date: '2013-09-29T15:05:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Hiring
 - Software Engineering
@@ -16,7 +16,7 @@ add_to_popular_list: true
 
 Last night, I tweeted the following: 
 
-<blockquote class="twitter-tweet" lang="en"><p>I&#39;m confused by the claim that &quot;10x&quot; or &quot;rockstar developers&quot; are a myth. Are star athletes, artists, writers, and, uh, rock stars, a myth?</p>&mdash; Yevgeniy Brikman (@brikis98) <a href="https://twitter.com/brikis98/status/384208625725497344">September 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>I&#39;m confused by the claim that &quot;10x&quot; or &quot;rockstar developers&quot; are a myth. Are star athletes, artists, writers, and, uh, rock stars, a myth?</p>&mdash; Marat Badykov (@brikis98) <a href="https://twitter.com/brikis98/status/384208625725497344">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I got tons of replies and questions, but Twitter is an awful medium for 

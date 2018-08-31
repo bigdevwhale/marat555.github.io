@@ -2,7 +2,7 @@
 layout: post
 title: Some food for thought
 date: '2011-08-06T02:39:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Reading
 - Nutrition

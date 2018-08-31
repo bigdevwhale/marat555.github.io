@@ -2,7 +2,7 @@
 layout: post
 title: 'Travel quirks, part 3&#58; sculpture, animals, doppelgängers, art and more!'
 date: '2011-07-20T01:56:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Travel
 modified_time: '2011-08-06T14:41:03.424-07:00'

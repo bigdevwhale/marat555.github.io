@@ -2,7 +2,7 @@
 layout: post
 title: 'Travel quirks, part 2&#58; gastronomic adventures'
 date: '2011-07-19T01:08:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Travel
 modified_time: '2011-08-06T14:41:03.425-07:00'

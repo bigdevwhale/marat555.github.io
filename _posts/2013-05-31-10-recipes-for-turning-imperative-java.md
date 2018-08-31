@@ -2,7 +2,7 @@
 layout: post
 title: 10 recipes for turning imperative Java code into functional Scala code
 date: '2013-05-31T14:52:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Software Engineering
 modified_time: '2013-06-01T18:45:18.524-07:00'

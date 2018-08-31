@@ -63,7 +63,7 @@ more insight, I used [git-quick-stats](https://github.com/arzzen/git-quick-stats
 log for the book:
 
 {% highlight text %}
-Yevgeniy Brikman:
+Marat Badykov:
   insertions:    163756 (95%)
   deletions:     131425 (95%)
   files:         1693 (59%)
@@ -110,7 +110,7 @@ lots of Markdown, which I used to document those HCL examples.
 Let's use <code>git-quick-stats</code> to check the edit history for this book:
 
 {% highlight text %}
-Yevgeniy Brikman:
+Marat Badykov:
   insertions:    32209 (85%)
   deletions:     22402 (89%)
   files:         1662 (70%)

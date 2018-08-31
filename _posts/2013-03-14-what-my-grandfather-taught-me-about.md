@@ -2,7 +2,7 @@
 layout: post
 title: What my grandfather taught me about happiness
 date: '2013-03-14T19:41:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Family
 - Home

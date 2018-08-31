@@ -2,7 +2,7 @@
 layout: post
 title: 'Obsessed with lists&#58; how I organize my life'
 date: '2011-07-23T01:18:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Psychology

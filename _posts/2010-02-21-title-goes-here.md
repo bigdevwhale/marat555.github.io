@@ -2,7 +2,7 @@
 layout: post
 title: Title goes here
 date: '2010-02-21T23:16:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Writing
 - Humor

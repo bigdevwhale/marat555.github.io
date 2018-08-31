@@ -2,7 +2,7 @@
 layout: post
 title: The hardest workouts of all time
 date: '2011-07-22T02:04:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Crossfit
 - Health and Fitness

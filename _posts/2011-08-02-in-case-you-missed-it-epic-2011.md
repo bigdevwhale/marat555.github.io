@@ -2,7 +2,7 @@
 layout: post
 title: 'In case you missed it&#58; the epic 2011 Crossfit Games'
 date: '2011-08-02T02:21:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Crossfit
 - Health and Fitness

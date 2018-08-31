@@ -2,7 +2,7 @@
 layout: post
 title: '2010 Crossfit Games&#58; Northern California Qualifier, Day 1'
 date: '2010-03-28T19:32:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Crossfit
 - Health and Fitness

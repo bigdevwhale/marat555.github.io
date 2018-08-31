@@ -2,7 +2,7 @@
 layout: post
 title: A physical analogy for the creative thought process
 date: '2011-04-17T01:59:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Ideas
 - Psychology

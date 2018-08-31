@@ -2,7 +2,7 @@
 layout: post
 title: A thousand lives
 date: '2014-01-20T01:32:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Philosophy
 - Psychology

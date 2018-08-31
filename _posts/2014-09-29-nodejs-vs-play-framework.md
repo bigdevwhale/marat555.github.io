@@ -2,7 +2,7 @@
 layout: post
 title: Node.js vs Play Framework
 date: '2014-09-29T10:38:00.002-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Web Dev
 - Play

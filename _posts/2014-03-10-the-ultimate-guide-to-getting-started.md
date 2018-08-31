@@ -2,7 +2,7 @@
 layout: post
 title: The Ultimate Guide to Getting Started with the Play Framework
 date: '2014-03-10T10:30:00.002-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Play

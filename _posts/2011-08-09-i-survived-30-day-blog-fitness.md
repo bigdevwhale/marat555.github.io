@@ -2,7 +2,7 @@
 layout: post
 title: I survived the 30 day blog fitness challenge
 date: '2011-08-09T23:16:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Writing
 modified_time: '2015-03-28T13:23:15.554-07:00'

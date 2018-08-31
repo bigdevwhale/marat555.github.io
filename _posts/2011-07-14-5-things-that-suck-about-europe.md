@@ -2,7 +2,7 @@
 layout: post
 title: 5 things that suck about Europe
 date: '2011-07-14T00:08:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Travel
 modified_time: '2011-08-06T14:43:52.002-07:00'

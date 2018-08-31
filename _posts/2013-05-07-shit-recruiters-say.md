@@ -2,7 +2,7 @@
 layout: post
 title: Shit recruiters say
 date: '2013-05-07T12:49:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Hiring
 - Humor

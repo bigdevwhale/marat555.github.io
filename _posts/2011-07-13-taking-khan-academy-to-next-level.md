@@ -2,7 +2,7 @@
 layout: post
 title: Taking the Khan Academy to the next level
 date: '2011-07-13T01:50:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Ideas
 - LinkedIn

@@ -2,7 +2,7 @@
 layout: post
 title: The search for a monitor
 date: '2007-12-26T09:47:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Gadgets
 modified_time: '2011-08-06T15:11:18.053-07:00'

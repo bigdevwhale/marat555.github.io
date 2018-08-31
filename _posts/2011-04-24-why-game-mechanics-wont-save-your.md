@@ -2,7 +2,7 @@
 layout: post
 title: Why game mechanics won't save your crappy product
 date: '2011-04-24T00:37:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Design

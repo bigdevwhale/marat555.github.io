@@ -2,7 +2,7 @@
 layout: post
 title: Weight lifting
 date: '2008-05-25T23:39:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Health and Fitness
 modified_time: '2011-08-06T14:50:02.652-07:00'

@@ -2,7 +2,7 @@
 layout: post
 title: Obsessed with the apocalypse
 date: '2011-07-12T02:55:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Reading
 modified_time: '2011-08-06T14:44:01.091-07:00'

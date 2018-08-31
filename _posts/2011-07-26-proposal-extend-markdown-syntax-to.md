@@ -2,7 +2,7 @@
 layout: post
 title: 'Proposal&#58; extend Markdown syntax to support form elements'
 date: '2011-07-26T01:03:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Ideas
 - Web Dev

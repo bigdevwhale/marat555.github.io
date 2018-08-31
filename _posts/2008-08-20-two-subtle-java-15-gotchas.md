@@ -2,7 +2,7 @@
 layout: post
 title: A Subtle Java 1.5 "Gotcha"
 date: '2008-08-20T10:57:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Software Engineering
 modified_time: '2011-08-06T14:49:33.489-07:00'

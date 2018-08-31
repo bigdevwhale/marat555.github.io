@@ -2,7 +2,7 @@
 layout: post
 title: This is where I work. Remix.
 date: '2011-04-30T00:04:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - LinkedIn
 modified_time: '2011-08-06T14:45:53.726-07:00'

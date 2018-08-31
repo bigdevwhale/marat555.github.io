@@ -2,7 +2,7 @@
 layout: post
 title: Java's String.split()
 date: '2011-02-04T14:08:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Software Engineering
 modified_time: '2011-08-06T14:47:14.969-07:00'

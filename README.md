@@ -1,8 +1,8 @@
-# Yevgeniy Brikman Home Page
+# Marat Badykov Home Page
 
-This is the code for the [Yevgeniy Brikman Home Page](https://it.badykov.com).
+This is the code for the [Marat Badykov Home Page](https://it.badykov.com).
 
-![Yevgeniy Brikman Home Page Screenshot](/assets/img/screenshots/ybrikman-homepage-screenshot.png)
+![Marat Badykov Home Page Screenshot](/assets/img/screenshots/ybrikman-homepage-screenshot.png)
 
 I wanted a clean, simple home page where I could put my writing, speaking,
 projects, and photos. It had to be fast, mobile-friendly, free to build, and

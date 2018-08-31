@@ -2,7 +2,7 @@
 layout: post
 title: 'Seven Languages in Seven Weeks&#58; Prolog, Day 3'
 date: '2012-02-16T13:12:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Seven Languages in Seven Weeks
 modified_time: '2012-03-18T00:52:20.478-07:00'

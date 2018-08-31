@@ -2,7 +2,7 @@
 layout: post
 title: 'Ikea furniture&#58; some assembly required'
 date: '2011-08-04T02:13:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Home
 - Humor

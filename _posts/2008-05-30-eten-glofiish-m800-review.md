@@ -2,7 +2,7 @@
 layout: post
 title: Eten Glofiish M800 Review
 date: '2008-05-30T13:52:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Review
 - Gadgets

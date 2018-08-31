@@ -2,7 +2,7 @@
 layout: post
 title: Must-See Tech Talks for Every Programmer
 date: '2014-05-29T12:54:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Video
 - Software Engineering

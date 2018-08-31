@@ -2,7 +2,7 @@
 layout: post
 title: So long, and thanks for all the t-shirts
 date: '2014-04-02T10:50:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - LinkedIn
 modified_time: '2014-05-17T14:35:11.482-07:00'

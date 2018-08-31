@@ -2,7 +2,7 @@
 layout: post
 title: 'Seven Languages in Seven Weeks&#58; Ruby, Day 3'
 date: '2012-01-31T22:11:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Seven Languages in Seven Weeks
 modified_time: '2012-02-01T00:44:38.173-08:00'

@@ -3,7 +3,7 @@ layout: post
 title: Maxing out at 50 concurrent connections with Play or Netty on OS X? Here's
   a fix.
 date: '2014-02-18T18:07:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Play

@@ -2,7 +2,7 @@
 layout: post
 title: 'Worth watching&#58; why are we happy?'
 date: '2011-08-03T01:57:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Video
 - Psychology

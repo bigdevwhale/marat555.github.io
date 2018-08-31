@@ -2,7 +2,7 @@
 layout: post
 title: My 2010 Crossfit Goals
 date: '2010-01-06T10:41:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Crossfit
 - Goals

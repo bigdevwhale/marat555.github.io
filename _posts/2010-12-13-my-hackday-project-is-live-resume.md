@@ -2,7 +2,7 @@
 layout: post
 title: 'My hackday project is live&#58; The Resume Builder'
 date: '2010-12-13T01:53:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - LinkedIn
 - Software Engineering

@@ -2,7 +2,7 @@
 layout: post
 title: Got fast download but slow upload speeds? Here's a fix.
 date: '2014-04-14T17:49:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 modified_time: '2014-05-17T14:37:09.649-07:00'

@@ -2,7 +2,7 @@
 layout: post
 title: So I got a new toy...
 date: '2007-12-30T17:47:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Gadgets
 modified_time: '2011-08-06T15:11:18.052-07:00'

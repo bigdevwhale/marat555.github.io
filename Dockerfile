@@ -1,5 +1,5 @@
 FROM ruby:2.4.2
-MAINTAINER Yevgeniy Brikman <jim@ybrikman.com>
+MAINTAINER Marat Badykov <jim@ybrikman.com>
 
 # Copy the Gemfile and Gemfile.lock into the image and run bundle install in a
 # way that will be cached

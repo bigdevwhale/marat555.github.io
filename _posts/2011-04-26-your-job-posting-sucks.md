@@ -2,7 +2,7 @@
 layout: post
 title: Your job posting sucks.
 date: '2011-04-26T00:31:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - HowTo
 - Hiring

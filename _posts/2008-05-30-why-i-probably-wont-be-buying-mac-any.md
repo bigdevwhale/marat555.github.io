@@ -2,7 +2,7 @@
 layout: post
 title: Why I probably won't be buying a mac any time soon...
 date: '2008-05-30T07:53:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Review
 modified_time: '2008-06-30T08:34:42.584-07:00'

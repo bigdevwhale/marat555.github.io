@@ -2,7 +2,7 @@
 layout: post
 title: 'Sherlock, The Reichenbach Fall&#58; What Really Happened?'
 date: '2012-01-30T11:53:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - TV and Movies
 modified_time: '2012-01-31T22:18:37.009-08:00'

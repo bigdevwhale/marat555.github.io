@@ -2,7 +2,7 @@
 layout: post
 title: Working on a Mac
 date: '2008-01-25T14:27:00.001-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Review
 modified_time: '2008-06-30T08:34:42.584-07:00'

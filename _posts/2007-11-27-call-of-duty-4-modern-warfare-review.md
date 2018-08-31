@@ -2,7 +2,7 @@
 layout: post
 title: "Call of Duty 4&#58; Modern Warfare Review"
 date: '2007-11-27T21:47:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Review
 modified_time: '2007-11-28T19:49:09.459-08:00'

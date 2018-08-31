@@ -2,7 +2,7 @@
 layout: post
 title: Gears of War Review
 date: '2007-11-28T19:35:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Review
 modified_time: '2007-11-28T20:48:11.733-08:00'

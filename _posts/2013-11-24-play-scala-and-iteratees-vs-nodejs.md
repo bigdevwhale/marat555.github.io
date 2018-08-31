@@ -2,7 +2,7 @@
 layout: post
 title: 'Play, Scala, and Iteratees vs. Node.js, JavaScript, and Socket.io '
 date: '2013-11-24T16:16:00.000-08:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Web Dev
 - Play

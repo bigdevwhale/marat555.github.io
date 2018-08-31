@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yevgeniy Brikman on the devRant Podcast"
+title: "Marat Badykov on the devRant Podcast"
 tags:
 - External Writing
 - Startups

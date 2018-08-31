@@ -2,7 +2,7 @@
 layout: post
 title: Another "Gotcha", this time in HTML
 date: '2008-08-27T14:48:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Web Dev
 - Software Engineering

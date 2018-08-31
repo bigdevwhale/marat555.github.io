@@ -2,7 +2,7 @@
 layout: post
 title: The Saga Of The Stank
 date: '2014-07-15T16:28:00.001-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Home
 - Humor

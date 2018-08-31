@@ -2,7 +2,7 @@
 layout: post
 title: "The best minds of my generation are thinking about how to make people click ads—and that's ok."
 date: '2014-08-10T10:47:00.000-07:00'
-author: Yevgeniy Brikman
+author: Marat Badykov
 tags:
 - Startups
 modified_time: '2014-08-10T17:05:47.951-07:00'
