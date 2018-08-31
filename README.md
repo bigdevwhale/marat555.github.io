@@ -1,4 +1,4 @@
-# Gökhan Karabulut Home Page
+# Marat Badykov Home Page
 
 This is the code for the [Marat Badykov Home Page](http://marat555.github.io).
 
