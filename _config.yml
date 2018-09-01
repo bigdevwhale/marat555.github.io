@@ -15,20 +15,13 @@ nav:
 name: "Marat Badykov"
 description: "Hi! My name is Marat Badykov. I'm a full-stack web developer. I like to solve interesting and non-standard tasks, I enjoy writing Php, Ruby, and Js. I created this blog for sharing my thoughts about programming, software engineering and other cool stuff."
 thumbnail_path: "profile-photos/marat-badykov.jpg"
-bitcoin_address: "1G8qEUVUS8BBSwSWNM4EWR622vUpGtee66"
-hello_startup_url: "https://www.hello-startup.net/"
-website_repo_url: "https://github.com/brikis98/yevgeniy-brikman-homepage"
-atomic_squirrel_url: "https://www.atomic-squirrel.net/"
-gruntwork_url: "https://www.gruntwork.io/"
-terraform_up_and_running_url: "https://www.terraformupandrunning.com/"
-terraform_up_and_running_code_url: "https://github.com/brikis98/terraform-up-and-running-code"
 
 # URLs
 contact_urls:
   github:
     url: "https://github.com/Marat555"
     label: "GitHub"
-    icon: "github"
+    icon: "github-square"
   telegram:
       url: "https://t.me/marat_badykov"
       label: "telegram"
