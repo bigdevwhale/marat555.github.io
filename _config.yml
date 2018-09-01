@@ -30,9 +30,8 @@ contact_urls:
     label: "GitHub"
     icon: "github-square"
   email:
-    url: "maratcool@mail.ru"
+    url: "mailto:maratcool@mail.ru"
     label: "Email"
-    value: "mailto:maratcool@mail.ru"
     icon: "envelope-square"
 
 # Jekyll build settings
