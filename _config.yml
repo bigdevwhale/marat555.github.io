@@ -28,7 +28,11 @@ contact_urls:
   github:
     url: "https://github.com/Marat555"
     label: "GitHub"
-    icon: "github-square"
+    icon: "github"
+  telegram:
+      url: "https://t.me/marat_badykov"
+      label: "telegram"
+      icon: "telegram"
   email:
     url: "mailto:maratcool@mail.ru"
     label: "Email"
