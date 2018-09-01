@@ -3,7 +3,7 @@
 This is the code for the [Marat Badykov Home Page](http://marat555.github.io).
 
 This is my home page based on [Yevgeniy Brikman Home Page](http://www.ybrikman.com).
-Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)
+Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/blog/2015/04/20/migrating-from-blogger-to-github-pages/)
 for background info.
 
 # Quick start

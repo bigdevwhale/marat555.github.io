@@ -6,14 +6,14 @@ nav:
   main:
     blog: "/blog"
   blog:
-    all: "/writing"
-    popular: "/writing/popular"
-    tags: "/writing/tags"
+    all: "/blog"
+    popular: "/blog/popular"
+    tags: "/blog/tags"
     rss: "/feed.xml"
 
 # Bio settings
 name: "Marat Badykov"
-description: "The home page of Yevgeniy (Jim) Brikman, co-founder of Gruntwork, author of &quot;Hello, Startup&quot; and &quot;Terraform: Up & Running&quot;, and software engineer at LinkedIn, TripAdvisor, Cisco Systems, and Thomson Financial."
+description: "Hi! My name is Marat Badykov. I'm a full-stack web developer. I like to solve interesting and non-standard tasks, I enjoy writing Php, Ruby, and Js. I created this blog for sharing my thoughts about programming, software engineering and other cool stuff."
 thumbnail_path: "profile-photos/marat-badykov.jpg"
 bitcoin_address: "1G8qEUVUS8BBSwSWNM4EWR622vUpGtee66"
 hello_startup_url: "https://www.hello-startup.net/"
@@ -37,8 +37,8 @@ contact_urls:
 
 # Jekyll build settings
 paginate: 10
-paginate_path: "/writing/page:num"
-permalink: "/writing/:year/:month/:day/:title/"
+paginate_path: "/blog/page:num"
+permalink: "/blog/:year/:month/:day/:title/"
 sass:
   sass_dir: "/assets/css"
   style: :compressed
