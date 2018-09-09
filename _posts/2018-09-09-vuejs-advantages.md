@@ -27,7 +27,7 @@ about JSX, ES.
 
 #### A wide variety of uses
 
-VueJs integrates seamlessly with existing applications and this is amazing. You don't need to rewrite the entire 
+VueJs is progressive javascript framework. It integrates seamlessly with existing applications and this is amazing. You don't need to rewrite the entire 
 frontend code, you can gradually integrate VueJs components. For more complex projects, you can use vuex, 
 which is perfect for state management and routing.
 
