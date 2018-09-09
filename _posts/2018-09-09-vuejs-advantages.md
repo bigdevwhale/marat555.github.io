@@ -10,7 +10,7 @@ external_url: "https://vuejs.org/"
 add_to_popular_list: true
 ---
 
-I recently encountered the need to write a component on VueJs and I got a great pleasure learning and writing on it.
+I recently encountered the need to write a component on VueJs and I got a great pleasure learning and writing on it. 
 And now I want to write this post and share some of the reasons I think people should give VueJs a try!
 
 {% include figure.html path=page.thumbnail_path caption="Official website of VueJs" url=page.external_url %}
