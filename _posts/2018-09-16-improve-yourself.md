@@ -94,21 +94,21 @@ Below is a list of projects that you can implement:
 * Website with current exchange rates
 
 Or you can participate in the development of one of the existing opensource projects. 
-For example, I forked the repository of [Laravel framework](https://github.com/laravel/framework) and next week I plan to make the pull request into the main repository, resoving one of the issues
+For example, I forked the repository of [Laravel framework](https://github.com/laravel/framework) and next week I plan to make the pull request into the main repository, resolving one of the issues.
 
 #### Bonus step
 
 If your native language is not English then improve your knowledge of language skills:
 * Learn grammar
-* Increase your vocabulary, 
+* Increase your vocabulary
 * Improve pronunciation and overall ability to speak English
 
 As for me, I do an English on the way to work and back.
 
- Register on [stackoverflow](https://stackoverflow.com) and in your spare time help people solve their problems
+ Register on [stackoverflow](https://stackoverflow.com) and in your spare time help people solve their problems.
 
 
-Personally, I try to answer 4 questions a day and now I'm in the top 2% of month
+Personally, I try to answer 4 questions a day and now I'm in the top 2% of month.
 
 {% include figure.html path="blog/improve-yourself/stackverflow.png" alt="StackOverflow" %}
 
