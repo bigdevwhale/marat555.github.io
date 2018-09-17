@@ -9,7 +9,7 @@ thumbnail_path: blog/thumbs/web-development.jpg
 add_to_popular_list: true
 ---
 
-I set myself the goal to update and improve my skills and knowledge in web development.
+I set myself the goal to update and improve my skills and knowledge in web development. 
 In this post I'll tell you what steps I'm doing for this and why should everyone practice this. 
 I hope that those who want to develop professionally and not stand still will take benefit from this post.
 
