@@ -24,12 +24,16 @@ contact_urls:
     icon: "github-square"
   telegram:
       url: "https://t.me/marat_badykov"
-      label: "telegram"
+      label: "Telegram"
       icon: "telegram"
   email:
     url: "mailto:maratcool@mail.ru"
     label: "Email"
     icon: "envelope-square"
+  twitter:
+    url: "https://twitter.com/marat_badykov"
+    label: "Twitter"
+    icon: "twitter-square"
 
 # Jekyll build settings
 paginate: 10
