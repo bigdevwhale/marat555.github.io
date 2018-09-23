@@ -21,9 +21,10 @@ Obviously, these practices are much larger, but I decided to gather in this post
 
 #### Define all the necessary fields for SELECT instead of using SELECT *
 
-<b><i>Bad practice</i></b>
-
 As it seems to me, this is the most common mistake to get all available columns using *.
+With a large number of records and rows in the table, defining all the necessary fields will greatly speed up your query.
+
+<b><i>Bad practice</i></b>
 
 {% highlight sql %}
 SELECT *
@@ -32,8 +33,6 @@ FROM users;
 
 <b><i>Good practice</i></b>
 
-With a large number of records and rows in the table, defining all the necessary fields will greatly speed up your query.
-
 {% highlight sql %}
 SELECT name, description, address
 FROM users;
@@ -41,7 +40,8 @@ FROM users;
 
 #### Use WHERE to filter records instead of HAVING
 
-<b>HAVING</b> should only be used when filtering on an aggregated field. 
+<b>HAVING</b> should only be used when filtering on an aggregated field.
+ If the goal is to filter records based on the condition, then a better solution cannot be found.
 
 <b><i>Bad practice</i></b>
 
@@ -53,8 +53,6 @@ HAVING age > 25
 {% endhighlight %}
 
 <b><i>Good practice</i></b>
-
-If the goal is to filter records based on the condition, then a better solution cannot be found.
 
 {% highlight sql %}
 SELECT name
