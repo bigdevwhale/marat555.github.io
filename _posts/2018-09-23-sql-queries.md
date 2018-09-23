@@ -10,7 +10,7 @@ add_to_popular_list: true
 ---
 
 Performance and fast response of the web and mobile applications largely depends on the quality of writing SQL queries. 
-Most of the junior developers with whom I worked SQL queries are a weak points. So I decided to write a post about the best practices for writing SQL queries, 
+Most of the junior developers with whom I have worked SQL queries are weak points. So I decided to write a post about the best practices for writing SQL queries, 
 which good SQL developers uses every day.
 
 {% include figure.html path=page.thumbnail_path %}
@@ -21,7 +21,7 @@ Obviously, these practices are much larger, but I decided to gather in this post
 
 #### Define all the necessary fields for SELECT instead of using SELECT *
 
-<b>Bad practice</b>
+<b><i>Bad practice</i></b>
 
 As it seems to me, this is the most common mistake to get all available columns using *.
 
@@ -30,7 +30,7 @@ SELECT *
 FROM users;
 {% endhighlight %}
 
-<b>Good practice</b>
+<b><i>Good practice</i></b>
 
 With a large number of records and rows in the table, defining all the necessary fields will greatly speed up your query.
 
@@ -41,7 +41,9 @@ FROM users;
 
 #### Use WHERE to filter records instead of HAVING
 
-<b>Bad practice</b>
+<b>HAVING</b> should only be used when filtering on an aggregated field. 
+
+<b><i>Bad practice</i></b>
 
 {% highlight sql %}
 SELECT name
@@ -50,9 +52,7 @@ GROUP BY name
 HAVING age > 25
 {% endhighlight %}
 
-HAVING should only be used when filtering on an aggregated field. 
-
-<b>Good practice</b>
+<b><i>Good practice</i></b>
 
 If the goal is to filter records based on the condition, then a better solution cannot be found.
 
@@ -64,14 +64,16 @@ FROM users;
 
 #### Select more fields rather tha use DISTINCT
 
-<b>Bad practice</b>
+<b>SELECT DISTINCT</b> query is performed using the grouping of all fields in the query, which is significantly more resource-intensive than using the usual <b>SELECT</b>.
+
+<b><i>Bad practice</i></b>
 
 {% highlight sql %}
 SELECT DISTINCT name, age
 FROM users
 {% endhighlight %}
 
-<b>Good practice</b>
+<b><i>Good practice</i></b>
 
 {% highlight sql %}
 SELECT name, age, address
@@ -80,14 +82,16 @@ FROM users
 
 #### Use INNER JOIN instead of WHERE
 
-<b>Bad practice</b>
+If the query optimizer is doing its job right, there should be no difference between those queries. But <b>INNER JOIN</b> makes query more readable.
+
+<b><i>Bad practice</i></b>
 
 {% highlight sql %}
 SELECT users.name, address.street
 FROM users.id = address.user_id
 {% endhighlight %}
 
-<b>Good practice</b>
+<b><i>Good practice</i></b>
 
 {% highlight sql %}
 SELECT users.name, address.street
@@ -102,7 +106,7 @@ FROM users
 
 <b>EXISTS</b> is efficient when most of the filter criteria is in the main query.
 
-<b>Bad practice</b>
+<b><i>Bad practice</i></b>
 
 {% highlight sql %}
 Select * from users u
@@ -110,7 +114,7 @@ where id IN
 (select user_id from address)
 {% endhighlight %}
 
-<b>Good practice</b>
+<b><i>Good practice</i></b>
 
 {% highlight sql %}
 Select * from users u 
