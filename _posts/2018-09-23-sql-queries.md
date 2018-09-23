@@ -17,7 +17,7 @@ which good SQL developers uses every day.
 
 ## Good practices
 
-Obviously, these practices are much larger, but I decided to gather in this post the most used queries and not overload with rare cases.
+Obviously, list of these practices are much larger, but I decided to gather in this post the most used queries and not overload with rare cases.
 
 #### Define all the necessary fields for SELECT instead of using SELECT *
 
