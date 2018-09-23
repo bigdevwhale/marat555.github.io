@@ -3,13 +3,13 @@ layout: post
 title: 5 best practices for writing good SQL queries
 tags:
 - sql
-- database
+- sql queries
 - best practices
 thumbnail_path: blog/thumbs/sql-best-practices.jpg
 add_to_popular_list: true
 ---
 
-Performance and fast response of the web and mobile applications largely depends on the quality of writing SQL queries. 
+Performance and fast response of the web and mobile applications largely depend on the quality of writing SQL queries. 
 Most of the junior developers with whom I have worked SQL queries are weak points. So I decided to write a post about the best practices for writing SQL queries, 
 which good SQL developers uses every day.
 
