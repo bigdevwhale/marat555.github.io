@@ -41,7 +41,7 @@ FROM users;
 #### Use WHERE to filter records instead of HAVING
 
 <b>HAVING</b> should only be used when filtering on an aggregated field.
- If the goal is to filter records based on the condition, then a better solution cannot be found.
+ If the goal is to filter records based on the condition, then a better solution than <b>WHERE</b> cannot be found.
 
 <b><i>Bad practice</i></b>
 
