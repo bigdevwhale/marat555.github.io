@@ -125,7 +125,7 @@ where a.user_id = u.user_id)
 Best practices fro writing SQL queries:
 * Define all the necessary fields for <b>SELECT</b> instead of using <b>SELECT *</b>
 * Use <b>WHERE</b> to filter records instead of <b>HAVING</b>
-* Select more fields rather tha use <b>DISTINCT
+* Select more fields rather than use <b>DISTINCT
 * Use <b>INNER JOIN</b> instead of <b>WHERE</b>
 * Use <b>IN</b> and <b>EXIST</b> in the right situations
 
