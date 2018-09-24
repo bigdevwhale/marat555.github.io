@@ -60,7 +60,7 @@ WHERE age > 25
 FROM users;
 {% endhighlight %}
 
-#### Select more fields rather tha use DISTINCT
+#### Select more fields rather than use DISTINCT
 
 <b>SELECT DISTINCT</b> query is performed using the grouping of all fields in the query, which is significantly more resource-intensive than using the usual <b>SELECT</b>.
 
