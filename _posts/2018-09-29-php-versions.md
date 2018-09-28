@@ -12,7 +12,7 @@ In my work, I mainly use PHP 5.6 and 7.2. To learn more about the subject area, 
  {% include figure.html path=page.thumbnail_path url=page.external_url %}
 
 To structure the information, I decided to write this post about the most noticeable changes between versions. 
-I hope this post will be useful  for someone. All documentation links at the end. 
+I hope this post will be useful  for someone too. All documentation links at the end. 
 ## Versions
 #### PHP 5.0
 
