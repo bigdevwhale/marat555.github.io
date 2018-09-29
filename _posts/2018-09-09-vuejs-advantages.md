@@ -7,7 +7,6 @@ tags:
 - Js
 thumbnail_path: blog/thumbs/advantages-of-vuejs.png
 external_url: "https://vuejs.org/"
-add_to_popular_list: true
 ---
 
 I recently encountered the need to write a component on VueJs and I got a great pleasure learning and writing on it. 

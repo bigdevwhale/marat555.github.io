@@ -12,11 +12,11 @@ In my work, I mainly use PHP 5.6 and 7.2. To learn more about the subject area, 
  {% include figure.html path=page.thumbnail_path url=page.external_url %}
 
 To structure the information, I decided to write this post about the most noticeable changes between versions. 
-I hope this post will be useful  for someone too. All documentation links at the end. 
+I hope this post will be useful  for someone too. All documentation links are at the end. 
 ## Versions
 #### PHP 5.0
 
-In July 2004 PHP 5.0 was released. This version introduced with a set of cool changes. For me, the most important are enhancements for object-oriented programming. Thanks to this, object-oriented development has significantly increased its influence.
+In July 2004 PHP 5.0 was released. This version introduced a set of cool changes. For me, the most important changes are object-oriented programming enhancements. Thanks to this, object-oriented development has significantly increased its influence in PHP.
 
 #### PHP 5.1.x and PHP 5.2.x
 
