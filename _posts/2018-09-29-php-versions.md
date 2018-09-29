@@ -210,7 +210,7 @@ test(new StdClass());
 
 ## Summary
 
-In this article, I tried to describe all the most important changes that have been made with PHP from 5.0.
+In this article, I tried to describe all the most important changes that have been made to PHP from 5.0.
 
 ## See also
 
