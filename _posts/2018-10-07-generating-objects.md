@@ -167,9 +167,9 @@ You need to create a family of products of different types.
 
 {% highlight php %}
 class ProductA1 extends ProductA{...}
-class ProductB1 extends ProductA{...}
+class ProductB1 extends ProductB{...}
 class ProductA2 extends ProductA{...}
-class ProductB2 extends ProductA{...}
+class ProductB2 extends ProductB{...}
 
 abstract class ProductManager
 {
