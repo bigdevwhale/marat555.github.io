@@ -204,7 +204,7 @@ class Product2Manager extends ProductManager
 
 <blockquote>
   <p>
-  The service locator pattern is a design pattern used in software development to encapsulate the processes involved in obtaining a service with a strong abstraction layer.
+   Prototype pattern is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
   </p>
 </blockquote>
 {% include figure.html path=page.thumbnail_path path="blog/design-patterns/prototype.png" caption="Class diagram exemplifying the prototype pattern" %}
