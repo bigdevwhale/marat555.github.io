@@ -97,7 +97,7 @@ Building an inheritance hierarchy of creator classes.
 
 #### Example
 
-You need to create a variety of products of a certain kinds.
+You need to create a variety of products of certain kinds.
 
 #### Implementation 
 
