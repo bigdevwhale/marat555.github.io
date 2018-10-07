@@ -93,7 +93,7 @@ class Settings
 
 #### Purpose
 
-Building an inheritance hierarchy of creator classes
+Building an inheritance hierarchy of creator classes.
 
 #### Example
 
@@ -153,7 +153,7 @@ class ConcreteProductManager extends ProductManager
   The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes.
   </p>
 </blockquote>
-{% include figure.html path=page.thumbnail_path path="blog/design-patterns/abstract-factory.png" caption="Class diagram exemplifying the abstarct factory pattern" %}
+{% include figure.html path=page.thumbnail_path path="blog/design-patterns/abstract-factory.png" caption="Class diagram exemplifying the abstract factory pattern" %}
 
 #### Purpose
 
@@ -215,7 +215,7 @@ Using clone to generate objects.
 
 #### Example
 
-You need to create an object that is similar to existing object.
+You need to create an object that is similar to an existing object.
 
 #### Implementation 
 
