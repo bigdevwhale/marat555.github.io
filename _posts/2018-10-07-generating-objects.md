@@ -215,7 +215,7 @@ Using clone to generate objects.
 
 #### Example
 
-You need to create aт object that is similar to existing object.
+You need to create an object that is similar to existing object.
 
 #### Implementation 
 
@@ -311,7 +311,7 @@ $hardDrive = new HardDrive();
 $computer = new Computer($hardDrive);
 {% endhighlight %}
 
-##Summary
+## Summary
 
 This post covered some of the tricks that you can use to generate objects. 
 
