@@ -4,6 +4,7 @@ title: "Design patterns. Short and clear. Part 1: Generating Objects."
 tags:
 - Programming
 - Design patterns
+- Generatng objects
 thumbnail_path: blog/thumbs/design-patterns.png
 add_to_popular_list: true
 ---
