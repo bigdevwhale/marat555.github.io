@@ -4,6 +4,7 @@ url: "https://it.badykov.com"
 # Internal nav
 nav:
   main:
+    profile: "/"
     blog: "/blog"
   blog:
     all: "/blog"
@@ -26,14 +27,22 @@ contact_urls:
       url: "https://t.me/marat_badykov"
       label: "Telegram"
       icon: "telegram"
-  email:
-    url: "mailto:maratcool@mail.ru"
-    label: "Email"
-    icon: "envelope-square"
   twitter:
     url: "https://twitter.com/marat_badykov"
     label: "Twitter"
     icon: "twitter-square"
+  medium:
+    url: "https://medium.com/@marat_badykov"
+    label: "Medium"
+    icon: "medium"
+  linkedin:
+    url: "https://www.linkedin.com/in/marat-badykov-5921ab162/"
+    label: "Linkedin"
+    icon: "linkedin-square"
+  email:
+    url: "mailto:maratcool@mail.ru"
+    label: "Email"
+    icon: "envelope-square"
 
 # Jekyll build settings
 paginate: 10
@@ -44,7 +53,6 @@ sass:
   style: :compressed
 highlighter: rouge
 timezone: 'America/Los_Angeles'
-repository: brikis98/yevgeniy-brikman-homepage
 
 # Plugins (GitHub Pages only support a few)
 gems:
