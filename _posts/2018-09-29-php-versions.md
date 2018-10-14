@@ -5,7 +5,7 @@ tags:
 - PHP
 - Programming
 thumbnail_path: blog/thumbs/php.png
-add_to_popular_list: true
+add_to_popular_list: false
 ---
 
 In my work, I mainly use PHP 5.6 and 7.2. To learn more about the subject area, I decided to find out how the development of PHP was going from 5.0 to 7.2. 
