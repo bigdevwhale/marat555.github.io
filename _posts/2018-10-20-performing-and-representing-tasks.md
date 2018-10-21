@@ -140,7 +140,7 @@ $mpg2kml->show();
 
 Car selection algorithm based on the day of the week.
 
-#### Implementation example
+#### Implementation
 
 {% highlight php %}
 <?php
