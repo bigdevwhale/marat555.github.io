@@ -55,7 +55,7 @@ Design patterns are guidelines for solving repetitive problems.
  The front controller design pattern is listed in several pattern catalogs and related to the design of web applications. It is "a controller that handles all requests for a website", which is a useful structure for web application developers to achieve the flexibility and reuse without code redundancy.
   </p>
 </blockquote>
-{% include figure.html path=page.thumbnail_path path="blog/enterprise-patterns/front-controller.gif" caption="Class diagram exemplifying the Enterprise pattern" %}
+{% include figure.html path=page.thumbnail_path path="blog/enterprise-patterns/front-controller.gif" caption="Class diagram exemplifying the Front Controller pattern" %}
 
 #### Purpose
  Use this for larger systems in which you know that you will need as much flexibility as possible in managing many different views and commands.
@@ -279,7 +279,6 @@ class FooController extends Zend_Controller_Action
 #### Implementation 
 
 {% highlight php %}
-<?php
 <?php
 // we are forced to mock a request in production code:
 $_GET['id'] = $someRow['id];
