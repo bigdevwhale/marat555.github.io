@@ -21,6 +21,10 @@ Design patterns are guidelines for solving repetitive problems.
 
 ## Types of Design Patterns
 
+* Patterns for Flexible Object Programming
+  * [The Composite Pattern](#the-composite-pattern)
+  * [The Decorator Pattern](#the-decorator-pattern)
+  * [The Facade Pattern](#the-facade-pattern)
 * [Generating Objects](https://it.badykov.com/blog/2018/10/07/generating-objects){:target="_blank"}
   * [The Singleton Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#the-singleton-pattern){:target="_blank"}
   * [Factory Method Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#factory-method-pattern){:target="_blank"}
@@ -28,10 +32,6 @@ Design patterns are guidelines for solving repetitive problems.
   * [Prototype](https://it.badykov.com/blog/2018/10/07/generating-objects/#prototype){:target="_blank"}
   * [Service Locator](https://it.badykov.com/blog/2018/10/07/generating-objects/#service-locator){:target="_blank"}
   * [Dependency Injection](https://it.badykov.com/blog/2018/10/07/generating-objects/#dependency-injection){:target="_blank"}
-* Patterns for Flexible Object Programming
-  * [The Composite Pattern](#the-composite-pattern)
-  * [The Decorator Pattern](#the-decorator-pattern)
-  * [The Facade Pattern](#the-facade-pattern)
 * [Performing and Representing Tasks](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks){:target="_blank"}
   * [The Interpreter pattern](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks/#the-interpreter-pattern){:target="_blank"}
   * [The Strategy pattern](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks/#the-strategy-pattern){:target="_blank"}

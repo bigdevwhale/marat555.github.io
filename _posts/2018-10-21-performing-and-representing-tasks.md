@@ -25,6 +25,13 @@ In this post, we get active. We look at patterns that help us to get things done
 
 ## Types of Design Patterns
 
+* Performing and Representing Tasks
+  * [The Interpreter pattern](#the-interpreter-pattern)
+  * [The Strategy pattern](#the-strategy-pattern)
+  * [The Observer pattern](#the-observer-pattern)
+  * [The Visitor pattern](#the-visitor-pattern)
+  * [The Command pattern](#the-command-pattern)
+  * [The Null Object pattern](#the-null-object-pattern)
 * [Generating Objects](https://it.badykov.com/blog/2018/10/07/generating-objects){:target="_blank"}
   * [The Singleton Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#the-singleton-pattern){:target="_blank"}
   * [Factory Method Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#factory-method-pattern){:target="_blank"}
@@ -36,13 +43,6 @@ In this post, we get active. We look at patterns that help us to get things done
   * [The Composite Pattern](https://it.badykov.com/blog/2018/10/14/flexible-object-programming/#the-composite-pattern){:target="_blank"}
   * [The Decorator Pattern](https://it.badykov.com/blog/2018/10/14/flexible-object-programming/#the-decorator-pattern){:target="_blank"}
   * [The Facade Pattern](https://it.badykov.com/blog/2018/10/14/flexible-object-programming/#the-facade-pattern){:target="_blank"}
-* Performing and Representing Tasks
-  * [The Interpreter pattern](#the-interpreter-pattern)
-  * [The Strategy pattern](#the-strategy-pattern)
-  * [The Observer pattern](#the-observer-pattern)
-  * [The Visitor pattern](#the-visitor-pattern)
-  * [The Command pattern](#the-command-pattern)
-  * [The Null Object pattern](#the-null-object-pattern)
 * [Enterprise Patterns](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/){:target="_blank"}
   * [Front Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#front-controller){:target="_blank"}
   * [Application Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#application-controller){:target="_blank"}

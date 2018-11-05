@@ -21,6 +21,14 @@ Design patterns are guidelines for solving repetitive problems.
 
 ## Types of Design Patterns
 
+* Database Patterns
+  * [Data Mapper](#data-mapper)
+  * [Identity map](#identity-map)
+  * [Unit of Work](#unit-of-work)
+  * [Lazy Load](#lazy-load)
+  * [Domain Object Factory](#domain-object-factory)
+  * [Identity Object](#identity-object)
+  * [Domain Object Assembler](#domain-object-assembler)
 * [Generating Objects](https://it.badykov.com/blog/2018/10/07/generating-objects){:target="_blank"}
   * [The Singleton Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#the-singleton-pattern){:target="_blank"}
   * [Factory Method Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#factory-method-pattern){:target="_blank"}
@@ -46,14 +54,6 @@ Design patterns are guidelines for solving repetitive problems.
   * [Page Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#page-controller){:target="_blank"}
   * [Transaction Script](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#transaction-script){:target="_blank"}
   * [Domain Model](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#domain-model){:target="_blank"}
-* Database Patterns
-  * [Data Mapper](#data-mapper)
-  * [Identity map](#identity-map)
-  * [Unit of Work](#unit-of-work)
-  * [Lazy Load](#lazy-load)
-  * [Domain Object Factory](#domain-object-factory)
-  * [Identity Object](#identity-object)
-  * [Domain Object Assembler](#domain-object-assembler)
   
 ## Data Mapper
 

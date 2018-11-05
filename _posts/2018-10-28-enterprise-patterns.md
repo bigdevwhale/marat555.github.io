@@ -21,6 +21,13 @@ Design patterns are guidelines for solving repetitive problems.
 
 ## Types of Design Patterns
 
+* Enterprise Patterns
+  * [Front Controller](#front-controller)
+  * [Application Controller](#application-controller)
+  * [Template View](#template-view)
+  * [Page Controller](#page-controller)
+  * [Transaction Script](#transaction-script)
+  * [Domain Model](#domain-model)
 * [Generating Objects](https://it.badykov.com/blog/2018/10/07/generating-objects){:target="_blank"}
   * [The Singleton Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#the-singleton-pattern){:target="_blank"}
   * [Factory Method Pattern](https://it.badykov.com/blog/2018/10/07/generating-objects/#factory-method-pattern){:target="_blank"}
@@ -39,13 +46,6 @@ Design patterns are guidelines for solving repetitive problems.
   * [The Visitor pattern](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks/#the-visitor-pattern){:target="_blank"}
   * [The Command pattern](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks/#the-command-pattern){:target="_blank"}
   * [The Null Object pattern](https://it.badykov.com/blog/2018/10/21/performing-and-representing-tasks/#the-null-object-pattern){:target="_blank"}
-* Enterprise Patterns
-  * [Front Controller](#front-controller)
-  * [Application Controller](#application-controller)
-  * [Template View](#template-view)
-  * [Page Controller](#page-controller)
-  * [Transaction Script](#transaction-script)
-  * [Domain Model](#domain-model)
 * [Database Patterns](https://it.badykov.com/blog/2018/10/28/database-patterns/){:target="_blank"}
   * [Data Mapper](https://it.badykov.com/blog/2018/10/28/database-patterns/#data-mapper){:target="_blank"}
   * [Identity map](https://it.badykov.com/blog/2018/10/28/database-patterns/#identity-map){:target="_blank"}
