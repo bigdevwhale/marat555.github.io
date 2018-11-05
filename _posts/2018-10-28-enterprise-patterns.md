@@ -46,7 +46,14 @@ Design patterns are guidelines for solving repetitive problems.
   * [Page Controller](#page-controller)
   * [Transaction Script](#transaction-script)
   * [Domain Model](#domain-model)
-* Database Patterns
+* [Database Patterns](https://it.badykov.com/blog/2018/10/28/database-patterns/){:target="_blank"}
+  * [Data Mapper](https://it.badykov.com/blog/2018/10/28/database-patterns/#data-mapper){:target="_blank"}
+  * [Identity map](https://it.badykov.com/blog/2018/10/28/database-patterns/#identity-map){:target="_blank"}
+  * [Unit of Work](https://it.badykov.com/blog/2018/10/28/database-patterns/#unit-of-work){:target="_blank"}
+  * [Lazy Load](https://it.badykov.com/blog/2018/10/28/database-patterns/#lazy-load){:target="_blank"}
+  * [Domain Object Factory](https://it.badykov.com/blog/2018/10/28/database-patterns/#domain-object-factory){:target="_blank"}
+  * [Identity Object](https://it.badykov.com/blog/2018/10/28/database-patterns/#identity-object){:target="_blank"}
+  * [Domain Object Assembler](https://it.badykov.com/blog/2018/10/28/database-patterns/#domain-object-assembler){:target="_blank"}
   
 ## Front Controller
 

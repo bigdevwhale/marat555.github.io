@@ -43,8 +43,21 @@ In this post, we get active. We look at patterns that help us to get things done
   * [The Visitor pattern](#the-visitor-pattern)
   * [The Command pattern](#the-command-pattern)
   * [The Null Object pattern](#the-null-object-pattern)
-* Enterprise Patterns
-* Database Patterns
+* [Enterprise Patterns](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/){:target="_blank"}
+  * [Front Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#front-controller){:target="_blank"}
+  * [Application Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#application-controller){:target="_blank"}
+  * [Template View](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#template-view){:target="_blank"}
+  * [Page Controller](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#page-controller){:target="_blank"}
+  * [Transaction Script](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#transaction-script){:target="_blank"}
+  * [Domain Model](https://it.badykov.com/blog/2018/10/28/enterprise-patterns/#domain-model){:target="_blank"}
+* [Database Patterns](https://it.badykov.com/blog/2018/10/28/database-patterns/){:target="_blank"}
+  * [Data Mapper](https://it.badykov.com/blog/2018/10/28/database-patterns/#data-mapper){:target="_blank"}
+  * [Identity map](https://it.badykov.com/blog/2018/10/28/database-patterns/#identity-map){:target="_blank"}
+  * [Unit of Work](https://it.badykov.com/blog/2018/10/28/database-patterns/#unit-of-work){:target="_blank"}
+  * [Lazy Load](https://it.badykov.com/blog/2018/10/28/database-patterns/#lazy-load){:target="_blank"}
+  * [Domain Object Factory](https://it.badykov.com/blog/2018/10/28/database-patterns/#domain-object-factory){:target="_blank"}
+  * [Identity Object](https://it.badykov.com/blog/2018/10/28/database-patterns/#identity-object){:target="_blank"}
+  * [Domain Object Assembler](https://it.badykov.com/blog/2018/10/28/database-patterns/#domain-object-assembler){:target="_blank"}
   
 ## The Interpreter pattern 
 
