@@ -31,14 +31,12 @@ When Composer gets all that information, it solves the dependency graph using a 
 ## Problem
 
 We implement the system, which in turn consists of several applications. And each of these applications requires a specific software module to work.
+Or if you are using a certain library for your project and you decide to change something in the library, you will want your project to use the patched version.
 
 And we are looking for the best way to create and connect this dependency module using composer.
 
-## Ways of solution
 
-Ways will go from worst to best for understanding bad and good practices.
-
-#### Local files
+## Local files
 
 You can move your module to the application folder and use your application namespace in your module.
 
@@ -59,5 +57,55 @@ Example of your module's namespace:
 This method is perfect if you have one project with one dependency, but for several projects, methods described below will be more convenient.
 
 
-#### R 
+## VCS repository
 
+VCS stands for version control system. This includes versioning systems like git, svn, fossil or hg. Composer has a repository type for installing packages from these systems.
+
+#### Loading a package from a public VCS repository
+
+Example assuming you patched monolog to fix a bug in the bugfix branch:
+
+```plain
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/igorw/monolog"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "dev-bugfix"
+    }
+}
+```
+
+#### Using private VCS repositories
+
+Exactly the same solution allows you to work with your private repositories at GitHub and BitBucket:
+```plain
+{
+    "require": {
+        "vendor/my-private-repo": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@bitbucket.org:vendor/my-private-repo.git"
+        }
+    ]
+}
+```
+
+## Packagist
+
+You can submit your package to [Packagist](https://packagist.org/) and then anyone who wants to use your package can add your package to their composer.json file like this:
+
+```plain
+"require": {
+        "your/module": "master"
+    },
+```
+
+## Summary
+
+In this post, we looked at ways to use a custom module in composer project.
