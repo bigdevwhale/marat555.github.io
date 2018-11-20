@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ways of creation custom composer dependency"
+title: "Ways of Creation Custom Composer Dependency"
 tags:
 - Composer
 - Dependency management
