@@ -31,7 +31,7 @@ When Composer gets all that information, it solves the dependency graph using a 
 ## Problem
 
 We implement the system, which in turn consists of several applications. And each of these applications requires a specific software module to work.
-Or if you are using a certain library for your project and you decide to change something in the library, you will want your project to use the patched version.
+Or if we are using a certain library for our project and we decide to change something in the library, we will want our project to use the patched version.
 
 And we are looking for the best way to create and connect this dependency module using composer.
 
