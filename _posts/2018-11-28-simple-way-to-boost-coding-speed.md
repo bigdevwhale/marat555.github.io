@@ -2,8 +2,8 @@
 layout: post
 title: "Boost Your Coding Speed At Least 2 Times. Simple Technique."
 tags:
-- Composer
-- Dependency management
+- IDE
+- Tips
 thumbnail_path: blog/thumbs/coding-speed.jpg
 add_to_popular_list: true
 ---
