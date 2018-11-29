@@ -27,8 +27,8 @@ An integrated development environment (IDE) is a software application that provi
 </blockquote>
 {% include figure.html path="blog/speed-boost/ide.jpg" %}
 
-There is a large number of IDE. Your choice depends on the language in which you are programming and individual preferences. 
-Personally, I get a lot of fun programming on products from JetBrains.
+There is a large number of IDEs. Your choice depends on the language in which you are programming and individual preferences. 
+Personally, I get a lot of fun programming using products from JetBrains.
 
 ## Maximum Using of IDE Capabilities 
 
@@ -40,9 +40,9 @@ But I have often met people who have several years of experience in developing s
 They do a lot of unnecessary actions to perform some simple operations that IDE developers have already moved to certain shortcut keys.
 A high-class programmer should know these shortcuts no worse than the programming language with which he works.
 
-As a simple example, consider the following common situations for which most IDEs have keyboard shortcuts or has plugin:
+As a simple example, consider the following common situations for which most IDEs have keyboard shortcuts or have plugin:
 
-* Refactoring variables, methods that occurs several times in the project.
+* Refactoring variables, methods that occur several times in the project.
 * Surround Code Fragments with Language-Specific Constructs.
 * Override Methods of a Superclass
 * Navigating through the source code
