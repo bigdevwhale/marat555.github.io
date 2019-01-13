@@ -293,4 +293,4 @@ The Eventbrite API is extensive. I've attempted to cover all of the key endpoint
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see License File in [GitHub Repository](https://github.com/Marat555/eventbrite-api-laravel-wrapper) for more information.
