@@ -22,7 +22,7 @@ This package provides a simple interface to Eventbite's (awesome) API. Organize 
 
 
 ## Installation
-Laravel Eventbrite uses compose to make installation a breeze.
+Laravel Eventbrite uses composer to make installation a breeze.
 
 
 **Install via composer** 
