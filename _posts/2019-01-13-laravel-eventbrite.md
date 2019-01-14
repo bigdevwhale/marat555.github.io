@@ -13,7 +13,7 @@ add_to_popular_list: true
 Eventbrite API wrapper for Laravel.
 
 ## Background
-One of my projects required a good Laravel Eventbrite Api wrapper, but from the existing implementations I didn’t like their code, so I decided to create my own implementation.
+One of my projects required a good Laravel Eventbrite Api wrapper, but I didn't like quality of any of existing imlementations, so I decided to create my own implementation.
 
 ## Eventbrite Laravel
 GitHub repository - [Eventbrite Laravel](https://github.com/Marat555/eventbrite-api-laravel-wrapper)
@@ -287,7 +287,7 @@ try {
 - Media
   - get
   - createUpload
-  - createUpload
+  - retrieveUpload
 
 The Eventbrite API is extensive. I've attempted to cover all of the key endpoints  but there are endpoints that are currently unimplemented.
 
