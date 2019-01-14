@@ -42,14 +42,14 @@ Add the Laravel Eventbrite service provider to your `config/app.php` file in the
 
 
 **Eventbrite facade alias**
-Then add the `Eventbrite` facade to your `aliases` key: `'Eventbrite' => Marat555\Eventbrite\Facades\Eventbrite::class.  
+Then add the `Eventbrite` facade to your `aliases` key: 'Eventbrite' => Marat555\Eventbrite\Facades\Eventbrite::class.  
 
 
 
 ## Configuration
 Configuration can be done via your `.env` file.
 ```
-Eventbrite_BASE_URL=https://www.eventbriteapi.com/v3/
+EVENTBRITE_BASE_URL=https://www.eventbriteapi.com/v3/
 EVENTBRITE_TOKEN=xxxxxxx
 ````
 >You may also publish the config file to `config/eventbrite.pzhp` for editing:
@@ -81,7 +81,7 @@ class EventbriteController extends Controller
 ### Event
 #### Retrieve an Event by Event ID
 ``` php
-Eventbrite::event()->c($eventId);
+Eventbrite::event()->get($eventId);
 ```
 
 #### Create a new Event
@@ -289,7 +289,7 @@ try {
   - createUpload
   - createUpload
 
-The Eventbrite API is extensive. I've attempted to cover all of the key endpoints  but there are a few endpoints that are currently unimplemented.
+The Eventbrite API is extensive. I've attempted to cover all of the key endpoints  but there are endpoints that are currently unimplemented.
 
 ## License
 
