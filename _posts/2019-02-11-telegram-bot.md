@@ -107,6 +107,6 @@ By analogy, I created the following channels:
 
 ## Summary
 
-In this post, I described what it took me to create a simple bot telegram and channel.
+In this post, I described what it took me to create a simple telegram bots and channels.
 
 
