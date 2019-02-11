@@ -2,9 +2,10 @@
 layout: post
 title: "Simple Telegram bot in Laravel"
 tags:
-- Eventbrite
+- Telegram
 - Laravel
-- Api
+- Bot
+- Channel
 thumbnail_path: blog/thumbs/telegram-bot.png
 add_to_popular_list: true
 ---
