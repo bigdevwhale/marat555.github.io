@@ -11,21 +11,23 @@ add_to_popular_list: true
 
 {% include figure.html path="blog/thumbs/telegram-bot.png" %}
 
-**[Humor](https://t.me/humor_quotes)** - Humor quotes
+**[Humor](https://t.me/humor_quotes)** - Humor quotes channel
 
-**[Success](https://t.me/success_quotes_channel)** - Success quotes
+**[Success](https://t.me/success_quotes_channel)** - Success quotes channel
 
-**[Inspiration](https://t.me/inspiration_quote)** - Inspiration quotes
+**[Inspiration](https://t.me/inspiration_quote)** - Inspiration quotes channel
 
-**[William Shakespeare](https://t.me/william_shakespeare_quotes)** - William Shakespeare quotes
+**[William Shakespeare](https://t.me/william_shakespeare_quotes)** - William Shakespeare quotes channel
 
-**[George R.R. Martin](https://t.me/george_rr_martin_quotes)** - George R.R. Martin quotes
+**[George R.R. Martin](https://t.me/george_rr_martin_quotes)** - George R.R. Martin quotes channel
 
-**[J.K. Rowling](https://t.me/jk_rowling_quotes)** - J.K. Rowling quotes
+**[J.K. Rowling](https://t.me/jk_rowling_quotes)** - J.K. Rowling quotes channel
 
-**[Stephen King](https://t.me/stephen_king_quotes)** - Stephen King quotes
+**[Stephen King](https://t.me/stephen_king_quotes)** - Stephen King quotes channel
 
-**[J.R.R. Tolkien](https://t.me/jrr_tolkien_quotes)** - J.R.R. Tolkien quotes
+**[J.R.R. Tolkien](https://t.me/jrr_tolkien_quotes)** - J.R.R. Tolkien quotes channel
+
+**[TolkienQuotesBot](https://telegram.me/TolkienQuotesBot)** - J.R.R. Tolkien quotes bot (send a random quote in reponse to your message)
 
 ## Background
 Recently I decided to write a simple bot for the experience and the subsequent implementation of more complex projects. 
