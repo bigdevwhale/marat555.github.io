@@ -31,11 +31,11 @@ add_to_popular_list: true
 **[TolkienQuotesBot](https://telegram.me/TolkienQuotesBot)** - J.R.R. Tolkien quotes bot (send a random quote in reponse to your message)
 
 ## Background
-Recently I decided to write a simple bot for the experience and the subsequent implementation of more complex projects. 
+Recently I decided to write a simple bot for get some experience and the subsequent implementation of more complex projects. 
 The choice fell on the bot of quotes for specific authors / books / genres / tags. 
 
 To implement this idea, it was necessary to perform two basic steps:
-1. Get a large amount of data authors, books, quotes, tags and structure them correctly in the form of tables in the database
+1. Get a large amount of authors, books, quotes, tags data and structure them correctly in the form of tables in the database
 2. Implement directly the server part of the bot, which would process all requests to the bot
 
 
