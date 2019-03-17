@@ -23,7 +23,7 @@ If an error occurs on entering these pages, then the site is vulnerable to SQL i
 
 ## Protection against SQL injection (SQL implementations)
 
-Protection against hacking comes down to the basic rule of "trust but verify." You need to check everything - numbers, strings, dates, data in special formats. Next we look at the main ways to protect.
+Protection against hacking comes down to the basic rule of "trust but verify." You need to check everything - numbers, strings, dates, data in special formats. Next, we look at the main ways of protection..
 
 
 #### Prepared Statements (with Parameterized Queries)
