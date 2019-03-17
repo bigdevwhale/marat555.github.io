@@ -13,7 +13,7 @@ SQL injection is one of the most accessible ways to hack a site. The essence of 
  SQL code into the data (transmitted via GET, POST requests or Cookie values). If the site is vulnerable and performs such 
  injections, then, in fact, there is an opportunity to execute any SQL query to the database.
 
-## How to detect a vulnerability that allows introducing SQL injection?
+## How to detect a vulnerability that allow to introduce SQL injection?
 
 Pretty easy. For example, there is a test site testsite.com. The site displays a list of news, with the possibility of a detailed view. The address of the page with a detailed description of the news is as follows: test.ru/?detail=1. Ie, through the GET request, the detail variable passes the value 1 (which is the identifier of the entry in the news table).
 
