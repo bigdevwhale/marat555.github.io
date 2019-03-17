@@ -56,7 +56,7 @@ but in both cases, the SQL query is first defined, and parameters are passed to 
 
 #### White List Input Validation
 
-The overwhelming majority of articles on injections, completely overlook this moment. But the reality is that in it we are faced with the need to substitute in the query not only data but also other elements - identifiers (field and table names) and even syntax elements, keywords. Even insignificant such as DESC or AND, but the safety requirements for such substitutions should still be no less strict!
+The overwhelming majority of articles on injections, completely overlook this moment. But the reality is that in it we are faced with the need to substitute in the query not only data but also other elements - identifiers (field and table names) and even syntax elements, keywords.
 
 Let's examine a rather banal case.
 We have a database of goods, which is displayed to the user in the form of an HTML table. The user can sort this table by one of the fields, in any direction.
