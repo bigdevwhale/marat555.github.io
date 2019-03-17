@@ -58,7 +58,7 @@ but in both cases, the SQL query is first defined, and parameters are passed to 
 
 The overwhelming majority of articles on injections, completely overlook this moment. But the reality is that in it we are faced with the need to substitute in the query not only data but also other elements - identifiers (field and table names) and even syntax elements, keywords. Even insignificant such as DESC or AND, but the safety requirements for such substitutions should still be no less strict!
 
-Let us examine a rather banal case.
+Let's examine a rather banal case.
 We have a database of goods, which is displayed to the user in the form of an HTML table. The user can sort this table by one of the fields, in any direction.
 That is, at least from the user's side, the name of the column and the direction of sorting come to us.
 Substitute them in the request directly - guaranteed injection. The usual formatting methods will not help here. Prepared expressions with neither identifiers nor keywords will lead to nothing but an error message.
