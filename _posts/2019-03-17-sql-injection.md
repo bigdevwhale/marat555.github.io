@@ -70,7 +70,7 @@ The essence of the method lies in the fact that all possible choices must be str
 Example:
 
 {% highlight php %}
-$order   = isset($_GET['order']) ? $_GET['order'] : ''; // просто для полноты кода
+$order   = isset($_GET['order']) ? $_GET['order'] : ''; // just to complete the code
 $sort    = isset($_GET['sort'])  ? $_GET['sort']  : '';
 
 $allowed = array("name", "price", "qty"); // enumerate options
