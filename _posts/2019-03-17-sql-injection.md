@@ -44,7 +44,7 @@ sql_execute(request, Array('Richard'));
 sql_execute(request, Array('Frank'));
 {% endhighlight %}
 
-There are several advantages to using prepared statements:
+There are several advantages of using prepared statements:
 1. The obvious advantage - the same prepared query can be used several times for different data, thereby reducing the code.
 2. Requests with bindable variables are better cached by the server, reducing the time to parse.
 3. Requests with bound variables have ready built-in protection against SQL injections.
