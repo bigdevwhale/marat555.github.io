@@ -2,10 +2,8 @@
 layout: post
 title: "SQL Injection Prevention"
 tags:
-- Telegram
-- Laravel
-- Bot
-- Channel
+- Sql
+- Sql injection
 thumbnail_path: blog/thumbs/sql-injection.jpg
 add_to_popular_list: true
 ---
