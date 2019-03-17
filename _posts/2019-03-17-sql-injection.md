@@ -9,7 +9,6 @@ add_to_popular_list: true
 ---
 
 {% include figure.html path="blog/sql-injection/sql-injection.jpg" %}
-
 SQL injection is one of the most accessible ways to hack a site. The essence of such injections is the injection of arbitrary
  SQL code into the data (transmitted via GET, POST requests or Cookie values). If the site is vulnerable and performs such 
  injections, then, in fact, there is an opportunity to execute any SQL query to the database.
