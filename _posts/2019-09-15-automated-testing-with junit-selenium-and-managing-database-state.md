@@ -1,115 +1,185 @@
 ---
 layout: post
-title: "SQL Injection Prevention"
+title: "Automated Testing With JUnit, Selenium and Managing Database State"
 tags:
-- SQL
-- SQL injection
-thumbnail_path: blog/thumbs/sql-injection.jpg
+- Java
+- JUnit
+- Selenium
+- dbUnit
+- testing
+thumbnail_path: blog/thumbs/automated-testing-with-selenium.png
 add_to_popular_list: true
 ---
 
-{% include figure.html path="blog/sql-injection/sql-injection.jpg" %}
-SQL injection is one of the most accessible ways to hack a site. The essence of such injections is the injection of arbitrary
- SQL code into the data (transmitted via GET, POST requests or Cookie values). If the site is vulnerable and performs such 
- injections, then, in fact, there is an opportunity to execute any SQL query to the database.
+{% include figure.html path="blog/thumbs/automated-testing-with-selenium.png" %}
+Maven template for automated testing with JUnit, Selenium and managing database state with DbUnit.
 
-## How to detect a vulnerability that allow to introduce SQL injection?
+[junit-selenium-dbunit](https://github.com/Marat555/junit-selenium-dbunit) - GitHub repository.
 
-Pretty easy. For example, there is a test site testsite.com. The site displays a list of news, with the possibility of a detailed view. The address of the page with a detailed description of the news is as follows: test.ru/?detail=1. Ie, through the GET request, the detail variable passes the value 1 (which is the identifier of the entry in the news table).
+## Background
+This week, one of my tasks was to create a framework for writing automated tests to test ui in different browsers. For this, I used the following:
+1. [Selenium](https://github.com/SeleniumHQ/selenium) is an umbrella project encapsulating a variety of tools and libraries enabling web browser automation. Selenium specifically provides infrastructure for the W3C WebDriver specification — a platform and language-neutral coding interface compatible with all major web browsers.
+2. [JUnit](https://github.com/junit-team/junit4) is a programmer-oriented testing framework for Java.
+3. [DbUnit](http://dbunit.sourceforge.net/) is  is a JUnit extension (also usable with Ant) targeted at database-driven projects that, among other things, puts your database into a known state between test runs. This is an excellent way to avoid the myriad of problems that can occur when one test case corrupts the database and causes subsequent tests to fail or exacerbate the damage.
+4. [Apache Maven](https://maven.apache.org/) is a software project management and comprehension tool.
 
-Let's change the GET request to ?detail=1' or ?detail=1". Next, we will try to send these requests to the server, that is, we go to testsite.com/?detail=1' or to testsite.com/?detail=1".
+In this post I would like to describe about how to use this template in your project.
 
-If an error occurs on entering these pages, then the site is vulnerable to SQL injections.
+## DbUnit
 
-## Protection against SQL injection (SQL implementations)
+{% include figure.html path="blog/automated-testing/database-management.jpg" %}
 
-Protection against hacking comes down to the basic rule of "trust but verify." You need to check everything - numbers, strings, dates, data in special formats. Next, we look at the main ways of protection..
+For managing database state I used [dbunit-plus](https://github.com/mjeanroy/dbunit-plus).
 
-
-#### Prepared Statements (with Parameterized Queries)
-
-Prepared statement is part of the functionality of the SQL database, designed to separate the request data and the actual SQL query. For example, we have a query:
-
-{% highlight sql %}
-insert into someTable (name) values ​​('George');
-{% endhighlight %}
-
-What can we notice just by looking at it? Firstly, the insert request itself is usually static and does not change in different requests, in 90% of cases it is simply hard-coded into the code or generated using some ORM; the data value (in this case, 'George') changes constantly and is set from the outside - from user input or from other sources. Bind variables allow you to specify a request separately, and then transfer data to it separately, something like this (pseudo-code):
-
-{% highlight sql %}
-request = sql_prepare('insert into table(name) values(:1)');
-sql_execute(request, Array('George'));
-sql_execute(request, Array('John'));
-sql_execute(request, Array('Richard'));
-sql_execute(request, Array('Frank'));
-{% endhighlight %}
-
-There are several advantages of using prepared statements:
-1. The obvious advantage - the same prepared query can be used several times for different data, thereby reducing the code.
-2. Requests with bindable variables are better cached by the server, reducing the time to parse.
-3. Requests with bound variables have ready built-in protection against SQL injections.
-
-#### Stored Procedures
-
-You can use stored procedures. Unlike prepared expressions, stored procedures are stored in the database, 
-but in both cases, the SQL query is first defined, and parameters are passed to it.
-
-#### White List Input Validation
-
-The overwhelming majority of articles on injections, completely overlook this moment. But the reality is that in it we are faced with the need to substitute in the query not only data but also other elements - identifiers (field and table names) and even syntax elements, keywords.
-
-Let's examine a rather banal case.
-We have a database of goods, which is displayed to the user in the form of an HTML table. The user can sort this table by one of the fields, in any direction.
-That is, at least from the user's side, the name of the column and the direction of sorting come to us.
-Substitute them in the request directly - guaranteed injection. The usual formatting methods will not help here. Prepared expressions with neither identifiers nor keywords will lead to nothing but an error message.
-The only solution is whitelisting.
-This, of course, is not Newton's binomial, and many developers easily implement this paradigm along the way, faced for the first time with the need to substitute the field name into a query. However, the article on protection from injections without this rule will be incomplete, and the defense itself will be full of holes.
-
-The essence of the method lies in the fact that all possible choices must be strictly written in our code, and only they should be included in the request, based on user input.
+Add database connection configuration to annotation @DbUnitConnection in DriverBase class.
 
 Example:
 
-{% highlight php %}
-$order   = isset($_GET['order']) ? $_GET['order'] : ''; // just to complete the code
-$sort    = isset($_GET['sort'])  ? $_GET['sort']  : '';
+```java
+@DbUnitConnection(url = "jdbc:postgresql://localhost:5432/test", user = "deep", password = "123")
+public class DriverBase {
+  ...
+}
+```
 
-$allowed = array("name", "price", "qty"); // enumerate options
-$key     = array_search($sort,$allowed); // look for the passed parameter among them
-$orderby = $allowed[$key]; // choose the found (or, due to the type conversion - the first) element.
-$order   = ($order == 'DESC') ? 'DESC' : 'ASC'; // determine the direction of sorting
-$query   = "SELECT * FROM `table` ORDER BY $orderby $order"; // request is 100% secure
-{% endhighlight %}
+Add file for inserting to database to /resources/dbunit/xml. Example of file:
 
-#### Escaping All User-Supplied Input
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <person id="1" name="David"/>
+    <person id="2" name="George"/>
+    <person id="3" name="Freddy"/>
+    <person id="4" name="Steven"/>
+</dataset>
+```
 
-This technique should only be used as a last resort, when none of the above are feasible. Input validation is probably a better choice as this methodology is frail compared to other defenses and we cannot guarantee it will prevent all SQL Injection in all situations.
+Here are the available annotations:
 
-## See more
+@DbUnitDataSet: define dataset (or directory containing dataset files) to load (can be used on package, entire class or a method).<br />
+@DbUnitInit: define SQL script to execute before any dataset insertion (can be used on package or entire class).<br />
+@DbUnitSetup: define DbUnit setup operation (can be used on package, entire class or a method).<br />
+@DbUnitTearDown: define DbUnit tear down operation (can be used on package, entire class or a method).<br />
 
-SQL Injection Attack Cheat Sheets
+Example:
 
-The following articles describe how to exploit different kinds of SQL Injection Vulnerabilities on various platforms that this article was created to help you avoid:
+```java
+@RunWith(SeleniumRunner.class)
+public class CampaignsPageIT extends DriverBase {
+    @BeforeClass
+    public static void setUp() {
+        instantiateDriverObject();
+    }
 
-* [SQL Injection Cheat Sheet](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
-* Bypassing WAF's with SQLi - [SQL Injection Bypassing WAF](https://www.owasp.org/index.php/SQL_Injection_Bypassing_WAF)
+    @AfterClass
+    public static void tearDown() {
+        closeDriverObjects();
+    }
 
-Description of SQL Injection Vulnerabilities
+    @After
+    public void afterEachMethod() {
+        clearCookies();
+    }
 
-* OWASP article on [SQL Injection](https://www.owasp.org/index.php/SQL_Injection) Vulnerabilities
-* OWASP article on [Blind_SQL_Injection](https://www.owasp.org/index.php/Blind_SQL_Injection) Vulnerabilities
+    private ExpectedCondition<Boolean> pageSizeEquals(final String size) {
+        return driver -> driver.findElement(By.cssSelector("form#TemplateBackupForm > div:nth-of-type(2) > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(4) > div > span:nth-of-type(2) > span > ul > li:nth-of-type(3) > a")).getText().equals(size);
+    }
 
-How to Avoid SQL Injection Vulnerabilities
+    @Test
+    @DbUnitDataSet("/dbunit/xml/sampleData.xml")
+    @DbUnitSetup(DbUnitOperation.INSERT)
+    @DbUnitTearDown(DbUnitOperation.DELETE)
+    public void pagingTest() throws Exception {
+        WebDriver driver = getDriver();
+        driver.get("https://10.20.3.138");
+        AuthPage authPage = new AuthPage();
+        authPage.fillLoginForm("default@user.com", "123").submitLogin();
+        WebDriverWait wait = new WebDriverWait(driver, 30, 100);
+        wait.until(pageSizeEquals("100"));
+    }
+}
+```
 
-* [OWASP Developers Guide](https://www.owasp.org/index.php/:Category:OWASP_Guide_Project) article on how to avoid SQL injection vulnerabilities
-* OWASP Cheat Sheet that provides [numerous language specific examples of parameterized queries using both Prepared Statements and Stored Procedures](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Query_Parameterization_Cheat_Sheet.md)
-* [The Bobby Tables site (inspired by the XKCD webcomic) has numerous examples in different languages of parameterized Prepared Statements and Stored Procedures](http://bobby-tables.com/)
+## JUnit-Selenium 
 
-How to Review Code for SQL Injection Vulnerabilities
+{% include figure.html path="blog/automated-testing/selenium-icon.jpg" %}
 
-* [OWASP Code Review Guide](https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project) article on how to [Review Code for SQL Injection](https://www.owasp.org/index.php/Reviewing_Code_for_SQL_Injection) Vulnerabilities
+As maven template, I used [Selenium-Maven-Template](https://github.com/Ardesco/Selenium-Maven-Template), but I made some changes in code and pom.xml replacing TestNg to JUnit, adding and fixing dependencies conflicts in pom.xml.
 
-How to Test for SQL Injection Vulnerabilities
+1. Open a terminal window/command prompt
+2. Clone this project.
+3. `cd junit-selenium-dbunit` (Or whatever folder you cloned it into)
+4. `mvn clean verify`
 
-* [OWASP Testing Guide](https://www.owasp.org/index.php/:Category:OWASP_Testing_Project) article on how to [Test for SQL Injection](https://www.owasp.org/index.php/Testing_for_SQL_Injection_(OWASP-DV-005)) Vulnerabilities
+All dependencies should now be downloaded and the example google cheese test will have run successfully in headless mode (Assuming you have Firefox installed in the default location)
 
+### What should you know?
 
+- To run any unit tests that test your Selenium framework you just need to ensure that all unit test file names end, or start with "test" and they will be run as part of the build.
+- The maven failsafe plugin has been used to create a profile with the id "selenium-tests".  This is active by default, but if you want to perform a build without running your selenium tests you can disable it using:
+
+        mvn clean verify -P-selenium-tests
+        
+- The maven-failsafe-plugin will pick up any files that end in IT by default.  You can customise this is you would prefer to use a custom identifier for your Selenium tests.
+
+### Known problems...
+
+- It looks like SafariDriver is no longer playing nicely and we are waiting on Apple to fix it... Running safari driver locally in server mode and connecting to it like a grid seems to be the workaround.
+
+### Anything else?
+
+Yes you can specify which browser to use by using one of the following switches:
+
+- -Dbrowser=firefox
+- -Dbrowser=chrome
+- -Dbrowser=ie
+- -Dbrowser=edge
+- -Dbrowser=opera
+
+If you want to toggle the use of chrome or firefox in headless mode set the headless flag (by default the headless flag is set to true)
+
+- -Dheadless=true
+- -Dheadless=false
+
+You don't need to worry about downloading the IEDriverServer, EdgeDriver, ChromeDriver , OperaChromiumDriver, or GeckoDriver binaries, this project will do that for you automatically.
+
+You can specify a grid to connect to where you can choose your browser, browser version and platform:
+
+- -Dremote=true 
+- -DseleniumGridURL=http://{username}:{accessKey}@ondemand.saucelabs.com:80/wd/hub 
+- -Dplatform=xp 
+- -Dbrowser=firefox 
+- -DbrowserVersion=44
+
+You can even specify multiple threads (you can do it on a grid as well!):
+
+- -Dthreads=2
+
+You can also specify a proxy to use
+
+- -DproxyEnabled=true
+- -DproxyHost=localhost
+- -DproxyPort=8080
+- -DproxyUsername=fred
+- -DproxyPassword=Password123
+
+If the tests fail screenshots will be saved in ${project.basedir}/target/screenshots
+
+If you need to force a binary overwrite you can do:
+
+- -Doverwrite.binaries=true
+
+### It's not working!!!
+
+You have probably got outdated driver binaries, by default they are not overwritten if they already exist to speed things up.  You have two options:
+
+- `mvn clean verify -Doverwrite.binaries=true`
+- Delete the `selenium_standalone_binaries` folder in your resources directory
+
+## Summary
+
+I hope this post is useful to someone who plans to add auto tests to their projects.
+
+## See more 
+
+GitHub repository - [junit-selenium-dbunit](https://github.com/Marat555/junit-selenium-dbunit)
