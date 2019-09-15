@@ -17,7 +17,7 @@ Maven template for automated testing with JUnit, Selenium and managing database 
 [junit-selenium-dbunit](https://github.com/Marat555/junit-selenium-dbunit) - GitHub repository.
 
 ## Background
-This week, one of my tasks was to create a framework for writing automated tests to test ui in different browsers. For this, I used the following:
+This week, one of my tasks was to create a basis for writing automated tests to test ui in different browsers. For this, I used the following:
 1. [Selenium](https://github.com/SeleniumHQ/selenium) is an umbrella project encapsulating a variety of tools and libraries enabling web browser automation. Selenium specifically provides infrastructure for the W3C WebDriver specification — a platform and language-neutral coding interface compatible with all major web browsers.
 2. [JUnit](https://github.com/junit-team/junit4) is a programmer-oriented testing framework for Java.
 3. [DbUnit](http://dbunit.sourceforge.net/) is  is a JUnit extension (also usable with Ant) targeted at database-driven projects that, among other things, puts your database into a known state between test runs. This is an excellent way to avoid the myriad of problems that can occur when one test case corrupts the database and causes subsequent tests to fail or exacerbate the damage.
