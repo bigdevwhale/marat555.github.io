@@ -111,7 +111,7 @@ As maven template, I used [Selenium-Maven-Template](https://github.com/Ardesco/S
 3. `cd junit-selenium-dbunit` (Or whatever folder you cloned it into)
 4. `mvn clean verify`
 
-All dependencies should now be downloaded and the example google cheese test will have run successfully in headless mode (Assuming you have Firefox installed in the default location)
+All dependencies should now be downloaded and the example test will have run in headless mode (Assuming you have Firefox installed in the default location)
 
 ### What should you know?
 
