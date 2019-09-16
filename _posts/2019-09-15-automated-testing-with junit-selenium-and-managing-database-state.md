@@ -23,7 +23,7 @@ This week, one of my tasks was to create a basis for writing automated tests to 
 3. [DbUnit](http://dbunit.sourceforge.net/) is  is a JUnit extension (also usable with Ant) targeted at database-driven projects that, among other things, puts your database into a known state between test runs. This is an excellent way to avoid the myriad of problems that can occur when one test case corrupts the database and causes subsequent tests to fail or exacerbate the damage.
 4. [Apache Maven](https://maven.apache.org/) is a software project management and comprehension tool.
 
-In this post I would like to describe about how to use this template in your project.
+In this post I would like to describe how to use this template in your project.
 
 ## DbUnit
 
@@ -31,7 +31,7 @@ In this post I would like to describe about how to use this template in your pro
 
 For managing database state I used [dbunit-plus](https://github.com/mjeanroy/dbunit-plus).
 
-Add database connection configuration to annotation @DbUnitConnection in DriverBase class.
+Add database connection configuration annotation `@DbUnitConnection` in DriverBase class.
 
 Example:
 
@@ -42,7 +42,7 @@ public class DriverBase {
 }
 ```
 
-Add file for inserting to database to /resources/dbunit/xml. Example of file:
+Add a file with data set for insertion to the database to `/resources/dbunit/xml`. Example of file:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -56,10 +56,10 @@ Add file for inserting to database to /resources/dbunit/xml. Example of file:
 
 Here are the available annotations:
 
-@DbUnitDataSet: define dataset (or directory containing dataset files) to load (can be used on package, entire class or a method).<br />
-@DbUnitInit: define SQL script to execute before any dataset insertion (can be used on package or entire class).<br />
-@DbUnitSetup: define DbUnit setup operation (can be used on package, entire class or a method).<br />
-@DbUnitTearDown: define DbUnit tear down operation (can be used on package, entire class or a method).<br />
+`@DbUnitDataSet`: define dataset (or directory containing dataset files) to load (can be used on package, entire class or a method).<br />
+`@DbUnitInit`: define SQL script to execute before any dataset insertion (can be used on package or entire class).<br />
+`@DbUnitSetup`: define DbUnit setup operation (can be used on package, entire class or a method).<br />
+`@DbUnitTearDown`: define DbUnit tear down operation (can be used on package, entire class or a method).<br />
 
 Example:
 
@@ -128,7 +128,7 @@ All dependencies should now be downloaded and the example google cheese test wil
 
 ### Anything else?
 
-Yes you can specify which browser to use by using one of the following switches:
+You can specify which browser to use by using one of the following switches:
 
 - -Dbrowser=firefox
 - -Dbrowser=chrome
@@ -178,7 +178,7 @@ You have probably got outdated driver binaries, by default they are not overwrit
 
 ## Summary
 
-I hope this post is useful to someone who plans to add auto tests to their projects.
+I hope this post is useful to someone who plans to add auto tests to his projects.
 
 ## See more 
 
