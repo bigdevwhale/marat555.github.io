@@ -31,7 +31,7 @@ In this post I would like to describe how to use this template in your project.
 
 For managing database state I used [dbunit-plus](https://github.com/mjeanroy/dbunit-plus).
 
-Add database connection configuration annotation `@DbUnitConnection` in DriverBase class.
+Add database connection configuration annotation `@DbUnitConnection` in `DriverBase` class.
 
 Example:
 
