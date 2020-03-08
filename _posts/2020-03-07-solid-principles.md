@@ -9,7 +9,7 @@ thumbnail_path: blog/thumbs/stupid.jpg
 add_to_popular_list: true
 ---
 
-If you want to write an understandable, flexible and maintainable code, you need to know what bad code looks like first. In this post, I will discuss principles that should be avoided when writing code.
+If you want to write understandable, flexible and maintainable code, you need to know what bad code looks like first. In this post, I will discuss bad practices that should be avoided when writing code.
 
 {% include figure.html path=page.thumbnail_path %}
 
@@ -31,7 +31,7 @@ If you want to write an understandable, flexible and maintainable code, you need
 * Avoiding everything static is very important to prevent strong coupling.
 
 ## Tight Coupling
-* Strong connectedness is a generalization of the singleton problem.
+* Tight coupling is a generalization of the singleton problem.
 * Connectivity is a measure of how related routines or modules are.
 * If making a change in one module in your application requires you to change another module, then connectivity exists. For example, you instantiate objects in the class of your constructor instead of passing instances as parameters. This is bad because it does not allow further changes, such as replacing an instance with an instance of a subclass, a mock object, or whatever.
 * Strongly coupled modules are difficult to reuse, and also difficult to test.
@@ -48,15 +48,15 @@ Donald Ervin Knuth said:
 Premature optimization is the root of all evil. Only costs alone, and no good. 
 </p>
 </blockquote>
-Optimized systems are much more complex than just writing a loop or using pre-increment instead of post-increment. You will end up with an unreadable code. That is why Premature Optimization is often considered erroneous.
+Optimized systems are much more complex than just writing a loop or using pre-increment instead of post-increment. You will end up with unreadable code. That is why system optimization is much harder.
 
-There are two rules for optimizing an application: Do not do this; (only for professionals!) do not do this yet.
+There are two rules for optimizing an application: Do not do this; (only for professionals!) do not optimize this yet.
 
 ## Indescriptive Naming
 
 * Name your classes, methods, attributes, and variables appropriately.
-* Do not cut them!
-* Write code for people, not for cars.
+* Do not abbreviate them!
+* Write code for people, not for machines.
 * Computers only understand 0 and 1.
 
 ## Duplication
