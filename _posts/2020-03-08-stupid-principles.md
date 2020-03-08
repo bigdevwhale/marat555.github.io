@@ -9,7 +9,7 @@ thumbnail_path: blog/thumbs/stupid.jpg
 add_to_popular_list: true
 ---
 
-If you want to write understandable, flexible and maintainable code, you need to know what bad code looks like first. In this post, I will discuss bad practices that should be avoided when writing code.
+If you want to write understandable, flexible and maintainable code, you need to know how bad code looks like first. In this post, I will discuss bad practices that should be avoided when writing code.
 
 {% include figure.html path=page.thumbnail_path %}
 
