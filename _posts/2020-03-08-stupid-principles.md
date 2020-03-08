@@ -32,8 +32,8 @@ If you want to write understandable, flexible and maintainable code, you need to
 
 ## Tight Coupling
 * Tight coupling is a generalization of the singleton problem.
-* Connectivity is a measure of how related routines or modules are.
-* If making a change in one module in your application requires you to change another module, then connectivity exists. For example, you instantiate objects in the class of your constructor instead of passing instances as parameters. This is bad because it does not allow further changes, such as replacing an instance with an instance of a subclass, a mock object, or whatever.
+* Coupling is a measure of how related routines or modules are.
+* If making a change in one module in your application requires you to change another module, then coupling exists. For example, you instantiate objects in the class of your constructor instead of passing instances as parameters. This is bad because it does not allow further changes, such as replacing an instance with an instance of a subclass, a mock object, or whatever.
 * Strongly coupled modules are difficult to reuse, and also difficult to test.
  
 ## Untestability
