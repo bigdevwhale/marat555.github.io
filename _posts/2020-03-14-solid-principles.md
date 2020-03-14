@@ -9,7 +9,7 @@ thumbnail_path: blog/thumbs/solid.png
 add_to_popular_list: true
 ---
 
-In a previous post, we looked at principles to avoid when writing code. You can read it here. In this post, we will look 
+In a previous post, we looked at principles to avoid when writing code. You can read it [here](http://127.0.0.1:4000/blog/2020/03/08/stupid-principles/). In this post, we will look 
 at SOLID design principles, programming standards that all developers must understand well to create good architecture.
 
 {% include figure.html path=page.thumbnail_path %}
