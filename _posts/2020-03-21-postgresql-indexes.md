@@ -563,7 +563,7 @@ A Bloom filter is a space-efficient data structure that is used to test whether 
 
 This type of index is most useful when a table has many attributes and queries test arbitrary combinations of them.
 
-## Usage
+#### Usage
 
 The bloom index is suitable for multiple columns and any combination of queries.
 
