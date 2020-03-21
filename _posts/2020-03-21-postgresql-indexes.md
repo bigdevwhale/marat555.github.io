@@ -410,7 +410,7 @@ BRIN is a LOSSLY index. When the value of the indexed column is strongly related
 
 For example, time-series data, creating a BRIN index on a time or sequence field, and performing an equivalent value and range query are very effective.
 
-#### Example. Range type search.
+#### Example
 
 {% highlight bash %}
 postgres=# create table t_brin (id int, info text, crt_time timestamp);  
