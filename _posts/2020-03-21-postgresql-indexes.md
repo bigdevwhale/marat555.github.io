@@ -9,7 +9,7 @@ thumbnail_path: blog/thumbs/database-index.jpg
 add_to_popular_list: true
 ---
 
-There are several types of indexes in PostgreSQL. Beginners or those who have little to do with the database use the index that PostgreSQL creates by default (B-tree) or does not create them at all. It is necessary to know what indexes are used in which situations to speed up the execution of queries. In this post, I will try to examine this briefly and simply, without going into details of the internal structure.
+There are several types of indexes in PostgreSQL. Beginners or those who have little to do with the databases use the index that PostgreSQL creates by default (B-tree) or do not create them at all. It is necessary to know what indexes are used in which situations to speed up the execution of queries. In this post, I will try to examine this briefly and simply, without going into details of the internal structure of indexes.
 
 {% include figure.html path=page.thumbnail_path %}
 
