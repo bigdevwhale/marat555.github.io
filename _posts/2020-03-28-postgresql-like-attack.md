@@ -91,7 +91,7 @@ Because a successful connection without authentication does not yet appear in th
 ##  Related questions
 Even if it is not a DDoS attack, users may encounter similar problems.
 
-For example, when the database is very busy, the user's request response becomes slow, and the user's application piles up a lot of requests. These requests need to establish a new connection to the database. Due to the very busy database itself, the response is slow and the explosive high concurrent connection requests make the PG The fork operation on the server becomes slower, and the auth message packet is returned after this (so causing a similar phenomenon).
+For example, when the database is very busy, the user's request-response becomes slow, and the user's application piles up a lot of requests. These requests need to establish a new connection to the database. Due to the very busy database itself, the response is slow and the explosive high concurrent connection requests make the PG The fork operation on the server become slower, and the auth message packet is returned after this (so causing a similar phenomenon).
 
 Therefore, if the user encounters such a weird problem, the number of connections displayed in pg_stat_activity is smaller than max_connection, and it is indeed impossible to connect to the database (reporting an error of too_many_connections), then you can see if there is no DDoS attack or the database is busy.
 
