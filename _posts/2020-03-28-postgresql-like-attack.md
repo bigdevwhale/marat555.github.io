@@ -67,9 +67,6 @@ Zero or not specified means wait indefinitely.
 It is not recommended to use a timeout of less than 2 seconds.
 </p>
 </blockquote>
-
-
-connect_timeout
   
 An attacker can use this rule to initiate a large number of connection requests concurrently, but without providing a password, waiting for the server to time out, so that all the max_connection connections can be occupied.
 
