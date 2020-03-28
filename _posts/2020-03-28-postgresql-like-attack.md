@@ -90,7 +90,7 @@ Because a successful connection without authentication does not yet appear in th
 
 3. Configure pg_hba.conf, authentication IP, DB, USER, to avoid most attacks.
 
-4. configure users, DB. level connection restrictions, even if attacked, can also guarantee that a part of the connection can be used. Unless the attacker knows all the database names, user names, and attack them. Otherwise, it will not be occupied All connections.
+4. Configure users, DB. level connection restrictions, even if attacked, can also guarantee that a part of the connection can be used. Unless the attacker knows all the database names, user names, and attack them. Otherwise, it will not be occupied All connections.
 
 ##  Related questions
 Even if it is not a DDoS attack, users may encounter similar problems.
