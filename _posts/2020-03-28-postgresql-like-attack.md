@@ -67,7 +67,7 @@ Zero or not specified means wait indefinitely.
 It is not recommended to use a timeout of less than 2 seconds.
 </p>
 </blockquote>
-  
+
 An attacker can use this rule to initiate a large number of connection requests concurrently, but without providing a password, waiting for the server to time out, so that all the max_connection connections can be occupied.
 
 ## Phenomenon
@@ -76,7 +76,6 @@ If the user is full, the connection initiated by other normal requests will enco
 
 53300 too_many_connections
 
-  
 At the same time, the count (*) queried in pg_stat_activity is less than the actual max_connection configuration.
 Because a successful connection without authentication does not yet appear in the pg_stat_activity session.
 
