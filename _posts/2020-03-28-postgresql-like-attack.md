@@ -86,18 +86,18 @@ Because a successful connection without authentication does not yet appear in th
 ## Precautions
 1. Do not expose the listening port.
 
-2. If the listening port must be exposed, it is recommended to use source IP-authentication to filter illegal IP. to avoid most attacks.
+2. If the listening port must be exposed, it is recommended to use source IP authentication to filter illegal IP to avoid most attacks.
 
-3. Configure pg_hba.conf, authentication IP, DB, USER, to avoid most attacks.
+3. Configure pg_hba.conf, authenticate IP, DB, USER, and avoid most attacks.
 
-4. Configure users, DB. level connection restrictions, even if attacked, can also guarantee that a part of the connection can be used. Unless the attacker knows all the database names, user names, and attack them. Otherwise, it will not be occupied All connections.
+4. Configure user, DB-level connection restrictions, even if attacked, can also guarantee that some connections can be used. Unless the attacker knows all the database names and user names, they attack them. Otherwise, all connections will not be taken up.
 
 ##  Related questions
 Even if it is not a DDoS attack, users may encounter similar problems.
 
-For example, when the database is very busy, the user's request-response becomes slow, and the user's application piles up a lot of requests. These requests need to establish a new connection to the database. Due to the very busy database itself, the response is slow, and the explosive high concurrent connection requests make П .Г. The server's operation becomes slower, returning message packets after this (so causing a similar phenomenon).
+For example, when the database is very busy, the user's request response becomes slow, and the user's application piles up a lot of requests. These requests need to establish a new connection to the database. Due to the very busy database itself, the response is slow and the explosive high concurrent connection requests make the PG The fork operation on the server becomes slower, and the auth message packet is returned after this (so causing a similar phenomenon).
 
-Therefore, if the user encounters such a weird problem, the number of connections displayed in pg_stat_activity is smaller than max_connection, and the database cannot be connected (it reports an error of too_many_connections), then you can see whether a DDoS attack or the database is busy.
+Therefore, if the user encounters such a weird problem, the number of connections displayed in pg_stat_activity is smaller than max_connection, and it is indeed impossible to connect to the database (reporting an error of too_many_connections), then you can see if there is no DDoS attack or the database is busy.
 
 
 
