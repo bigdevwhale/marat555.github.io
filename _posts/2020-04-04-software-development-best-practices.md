@@ -8,7 +8,7 @@ thumbnail_path: blog/thumbs/software-development-best-practices.png
 add_to_popular_list: true
 ---
 
-Well-written project is more stable, easier to maintain, more enjoyable to work. In the following post, we will discuss some best practices that will make your project take your project to a new level.
+A well-written project is more stable, easier to maintain, more enjoyable to work with. In the following post, we will discuss some best practices that will allow you to take your project to a new level.
 
 {% include figure.html path=page.thumbnail_path %}
 
@@ -16,7 +16,7 @@ Well-written project is more stable, easier to maintain, more enjoyable to work.
 
 #### Deliver Working Software
 
-**[Pair programming](#pair-programming)** is development technique in which two programmers work on a specific problem together.
+**[Pair programming](#pair-programming)** is a development technique in which two programmers work on a specific problem together.
 
 **[Test-driven development](#test-driven-development)** improves code design and quality.
 
@@ -24,7 +24,7 @@ Well-written project is more stable, easier to maintain, more enjoyable to work.
 
 **[Scrum meetings](#scrum-meetings)** are short meetings used to plan, review, and increase accountability and clarity across a team.
 
-**[Retrospectives](#retrospectives)** a period for reflection at the end of each sprint.
+**[Retrospectives](#retrospectives)** is a period for reflection at the end of each sprint.
 
 
 ## Pair programming
@@ -49,7 +49,7 @@ Test driven development will improve the design and quality of the code written.
 
 {% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/scrum.png" %}
 
-Scrum is when a team quickly groups up in an effort to "self-organize". It is recommended to keep the scrum as short as possible. Agree on a duration of about 5-15 minutes. Scrums are typically conducted at the very beginning of every day additionally as needed (i.e. afternoon and the end of the day). A standard format is to go around in a circle and for each person to answer the following questions:
+Scrum is process when a team quickly groups up in an effort to "self-organize". It is recommended to keep the scrum as short as possible. Agree on a duration of about 5-15 minutes. Scrums are typically conducted at the very beginning of every day additionally as needed (i.e. afternoon and the end of the day). A standard format is to go around in a circle and for each person to answer the following questions:
 
 * What user stories did you complete yesterday?
 * What user stories are you working on today?
@@ -59,7 +59,7 @@ Scrum is when a team quickly groups up in an effort to "self-organize". It is re
 
 {% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/retro.jpg" %}
 
-At the end of each sprint a team will conduct a retrospective in an effort to "become more effective". There are numerous formats for which to conduct a retrospective; the six hats is a popular one.
+At the end of each sprint a team will conduct a retrospective in an effort to become more effective. There are numerous formats for which to conduct a retrospective; the six hats is a popular one.
 
 ## Summary
 
