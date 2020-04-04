@@ -2,8 +2,8 @@
 layout: post
 title: "Software Development Best Practices"
 tags:
-- PostgreSQL
-- DDoS
+- best practices
+- software development
 thumbnail_path: blog/thumbs/software-development-best-practices.png
 add_to_popular_list: true
 ---
