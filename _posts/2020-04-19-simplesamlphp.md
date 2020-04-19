@@ -1,70 +1,105 @@
 ---
 layout: post
-title: "Software Development Best Practices"
+title: "Problems and solutions that I encountered while installing and configuring simplesamlphp"
 tags:
-- best practices
-- software development
-thumbnail_path: blog/thumbs/software-development-best-practices.png
+- saml
+- simplesamlphp
+thumbnail_path: blog/saml/authentication-vs-authorization.png
 add_to_popular_list: true
 ---
 
-A well-written project is more stable, easier to maintain, more enjoyable to work with. In the following post, we will discuss some best practices that will allow you to take your project to a new level.
-
 {% include figure.html path=page.thumbnail_path %}
 
-## Best Practices
+## Background
 
-#### Deliver Working Software
+Last week I needed to implement authorization via SAML
 
-**[Pair programming](#pair-programming)** is a development technique in which two programmers work on a specific problem together.
+<blockquote>
+  <p>
+  Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions).
+  </p>
+</blockquote>
 
-**[Test-driven development](#test-driven-development)** improves code design and quality.
-
-#### Work Together
-
-**[Scrum meetings](#scrum-meetings)** are short meetings used to plan, review, and increase accountability and clarity across a team.
-
-**[Retrospectives](#retrospectives)** is a period for reflection at the end of each sprint.
+The project I'm working on is written in PHP, so the choice of a library for saml is obvious, it's simplesamlphp.
+In the process of working on the task, a couple of unpleasant problems arose related to simplesamlphp. Today I would like to tell about them. I hope this article will make life easier for someone.
 
 
-## Pair programming
+## Problem 1. Undefined classes
 
-{% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/pair-prog.png" %}
+I installed the library through the composer team and made all the necessary settings indicated on the official documentation.
+But immediately an error occurred:
+<blockquote>
+  <p>
+  'SimpleSAML\\Auth\\Source' not found in /vendor/simplesamlphp/simplesamlphp/modules/saml/www/sp/saml2-acs.php on line 12, referer:
+  </p>
+</blockquote>
 
-Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.
+This error was in the source code file of the library itself, so I had to see what was there.
 
-A system with two programmers possesses greater potential for the generation of more diverse solutions to problems for three reasons:
+### Solution
+Having studied the problem, I realized that namespaces are not recognized in all files in this directory
+<blockquote>
+  <p>
+  \vendor\simplesamlphp\simplesamlphp\modules\saml\www\sp\
+  </p>
+</blockquote>
 
-1. the programmers bring different prior experiences to the task;
-2. they may assess information relevant to the task in different ways;
-3. they stand in different relationships to the problem by virtue of their functional roles.
+The easiest solution was to include a vendor autoload in these files. In my case, added the following line
 
-## Test-driven development
+{% highlight php %}
+require_once dirname(dirname(__FILE__)). "/../../../../../../vendor/autoload.php";
+{% endhighlight %}
 
-Test driven development will improve the design and quality of the code written. It follows the cycle:
+## Problem 2. Poor location of configuration files
 
-{% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/tdd.png" %}
+Config files are located directly in the directory with all composer dependencies, so the configs will be deleted when the command is executed to update the composer dependencies under certain conditions. 
+For example, a new version of the simplesamlphp library will be released. 
 
-## Scrum meetings
+### Solution
 
-{% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/scrum.png" %}
+You need to set an environment variable with the location of your config directory. in my case, I added the following line in the apache config of my web application:
 
-Scrum is process when a team quickly groups up in an effort to "self-organize". It is recommended to keep the scrum as short as possible. Agree on a duration of about 5-15 minutes. Scrums are typically conducted at the very beginning of every day additionally as needed (i.e. afternoon and the end of the day). A standard format is to go around in a circle and for each person to answer the following questions:
+<blockquote>
+  <p>
+  SetEnv SIMPLESAMLPHP_CONFIG_DIR /var/simplesamlphp/config
+  </p>
+</blockquote>
 
-* What user stories did you complete yesterday?
-* What user stories are you working on today?
-* Do you have any blocks?
 
-## Retrospectives
+## Problem 3. Sometimes authorization via saml does not work
 
-{% include figure.html path=page.thumbnail_path path="blog/software-development-best-practices/retro.jpg" %}
+After all the settings made from the saml specified in the documentation and above, authorization through simplesamplnp began to work. But all of a sudden, authorization stopped working on one of the servers from time to time, and I had to dig into the logs.
+First, I changed the logging option to debug in the simplesaml config:
 
-At the end of each sprint a team will conduct a retrospective in an effort to become more effective. There are numerous formats for which to conduct a retrospective; the six hats is a popular one.
+{% highlight php %}
+'logging.level' => SimpleSAML\Logger::DEBUG,
+{% endhighlight %}
+
+This is what I then found in the logs:
+
+<blockquote>
+  <p>
+  samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Responder"/>
+  </p>
+</blockquote>
+
+This means that the problem is on the side of the identity provider. 
+
+That's what was in the logs on the side of the identity provider:
+
+<blockquote>
+  <p>
+ SSO Configuration Microsoft.IdentityServer.Service.SecurityTokenService.RevocationValidationException: 
+  </p>
+</blockquote>
+
+
+### Solution
+
+The problem was solved by disabling the SigningCertificateRevocationCheck option on the side of the identity provider.
+
+
 
 ## Summary
 
-Best practices for software development:
-* Pair programming
-* Test-driven development
-* Scrum meetings
-* Retrospectives
+Today I examined the problems that I encountered while working with the simplesamlphp library.
