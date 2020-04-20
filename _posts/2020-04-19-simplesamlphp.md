@@ -26,7 +26,7 @@ In the process of working on the task, a couple of unpleasant problems arose rel
 
 ## Problem 1. Undefined classes
 
-I installed the library through the composer team and made all the necessary settings indicated on the official documentation.
+I installed the library through the composer command and made all the necessary settings indicated on the official documentation.
 But immediately an error occurred:
 <blockquote>
   <p>
