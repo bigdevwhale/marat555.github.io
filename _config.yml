@@ -5,6 +5,7 @@ url: "https://it.badykov.com"
 nav:
   main:
     profile: "/"
+    music: "/music"
     blog: "/blog"
   blog:
     all: "/blog"

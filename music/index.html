@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Marat Badykov: Blog"
+header_title: Music
+include_header: music_header.html
+nav_item: music
+---
+
+{% for talk in site.data.music %}
+<div class="border-bottom border-light-gray mt4 mb4 pb3 circle-line">
+    <a href="{{ talk.links | map: 'url' | first }}" target="_blank" name="{{ talk.name | downcase | replace:' ','-' | remove:',' }}">
+        <h2>{{ talk.name }}</h2>
+    </a>
+    {% if talk.embed_url %}
+    {% include iframe.html url=talk.embed_url wrapper_style=talk.wrapper_style %}
+    {% else %}
+    <a href="{{ talk.thumbnail_url }}" target="_blank" rel="noopener">{% include image.html path=talk.thumbnail_path alt=talk.name %}</a>
+    {% endif %}
+    <p>
+        {{ talk.description }}
+    </p>
+    <p class="h6 mt0">
+        Date:
+        <time class="inline" datetime="{{ talk.date | date:"%Y-%m-%d" }}">{{ talk.date | date_to_string }}</time>
+    </p>
+</div>
+{% endfor %}
