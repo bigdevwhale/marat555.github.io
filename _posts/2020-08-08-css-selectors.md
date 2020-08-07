@@ -44,6 +44,8 @@ Universal selector selects all the elements on a webpage.
 
 Also referred to simply as a "type selector", this selector must match one or more HTML elements of the same name.
 
+#### Example:
+
 {% highlight css %}
 p {
    font-family: arial, helvetica, sans-serif; 
@@ -56,6 +58,8 @@ An ID selector is declared using a hash, or pound symbol (#) preceding a string 
 characters. The stringof characters is defined bythe developer. This selector matches
 any HTML element that has an ID attribute with the samevalue as thatof the selector,
 but minus the hash symbol.
+
+#### Example:
 
 {% highlight css %}
 #paragraph1 {
@@ -71,6 +75,8 @@ this string of characters is defined by the developer. The class selector also m
 all elements on the page that have their class attribute set to the same value as the
 class, minus the dot.
 
+#### Example:
+
 {% highlight css %}
 .note {
    color: red; 
@@ -83,6 +89,8 @@ class, minus the dot.
 
 The attribute selector targets elements based on the presence and/or value of HTML
 attributes, and is declared using square brackets
+
+#### Example:
 
 {% highlight css %}
 a[href="http://www.somesite.com"] {
@@ -98,6 +106,8 @@ this string of characters is defined by the developer. The class selector also m
 all elements on the page that have their class attribute set to the same value as the
 class, minus the dot.
 
+#### Example:
+
 {% highlight css %}
 div#paragraph1 p.note {
    color: green; 
@@ -107,6 +117,8 @@ div#paragraph1 p.note {
 ## Child Combinator
 
 A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements
+
+#### Example:
 
 {% highlight css %}
 p.note > b {
@@ -120,6 +132,7 @@ A selector that uses a general sibling combinator matches elements based on sibl
 relationships. That is to say, the selected elements are beside each other in the
 HTML.
 
+#### Example:
 
 {% highlight css %}
 h2 ~ p {
@@ -133,6 +146,8 @@ A selector that uses the adjacent sibling combinator uses the plus symbol (+), a
 is almost the same as the general sibling selector. The difference is that the targeted
 element must be an immediate sibling, not just a general sibling. 
 
+#### Example:
+
 {% highlight css %}
 p + p {
  text-indent: 1.5em;
@@ -145,6 +160,8 @@ p + p {
 A pseudo-class uses a colon character to identify a pseudo-state that an element
 might be in—for example, the state of being hovered, or the state of being activated.
 
+#### Example:
+
 {% highlight css %}
 a:active {
    color: blue;
@@ -155,6 +172,8 @@ a:active {
 
 Finally, CSS has a selector referred to as a pseudo-element and, used appropriately,
 it can be very useful.
+
+#### Example:
 
 {% highlight css %}
 p::first-letter {
