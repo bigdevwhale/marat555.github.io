@@ -8,7 +8,7 @@ nav_item: music
 
 {% for talk in site.data.music %}
 <div class="border-bottom border-light-gray mt4 mb4 pb3 circle-line">
-    <a href="{{ talk.links | map: 'url' | first }}" target="_blank" name="{{ talk.name | downcase | replace:' ','-' | remove:',' }}">
+    <a href="{{ talk.url }}" target="_blank">
         <h2>{{ talk.name }}</h2>
     </a>
     {% if talk.embed_url %}
