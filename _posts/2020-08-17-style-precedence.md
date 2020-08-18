@@ -1,182 +1,86 @@
 ---
 layout: post
-title: "Types of CSS Selectors"
+title: "CSS Precedence"
 tags:
 - css
 - css selectors
 - front-end
-thumbnail_path: blog/thumbs/types-of-css-selectors.png
+- css precedence
+thumbnail_path: blog/thumbs/css-precedence.png
 add_to_popular_list: true
 ---
 
-CSS selector is the part of a CSS rule set that actually selects the content you want to style. Let's look at all the different kinds of selectors 
+In a single HTML document possible that some CSS rules will conflict with one another. CSS uses a mechanism called the **cascade** to resolve any such conflicts. 
 
 {% include figure.html path=page.thumbnail_path %}
 
-# Types of CSS Selectors
+Before describing how the cascade works, we need to consider two of its main components - **specificity** and **inheritance**.
 
-* [Universal Selector](#universal-selector)
-* [Element Selector](#element-selector)
-* [Id Selector](#id-selectore) 
-* [Class Selector](#class-selector) 
-* [Attribute Selector](#attribute-selector)
-* [Descendant Combinator](#attribute-selector)
-* [Child Combinator](#child-combinator)
-* [General Sibling Combinator](#general-sibling-combinator)
-* [Adjacent Sibling Combinator](#adjacent-sibling-combinator)
-* [Pseudo-class](#pseudo-class)
-* [Pseudo-element](#pseudo-element)
+## Specificity
 
-## Universal Selector
+{% include figure.html path=page.thumbnail_path path="blog/css-precedence/specificity.jpg" %}
 
-Universal selector selects all the elements on a webpage.
+Specificity refers to the relative weights of various rules. It determines which styles apply to an element when more than one rule could apply. 
+Table shows how much each part of a selector contributes to the total specificity of that selector.
 
-#### Example:
+| Selector type | Example | Specificity |
+| --- | --- | --- |
+| Universal selector | * | 0,0,0,0 |
+| Combinator | * | 0,0,0,0 |
+| Element identifier | div | 0,0,0,**1** |
+| Pseudo-element identifier | ::first-line | 0,0,0,**1** |
+| Class identifier | .error | 0,0,**1**,0 |
+| Pseudo-class identifier | :hover | 0,0,**1**,0 |
+| Attribute identifier | [name="email"] | 0,0,**1**,0 |
+| ID identifier | #elem | 0,**1**,0,0 |
+| Inline style attribute | style="color: blue;" | **1**,0,0,0 |
 
-{% highlight css %}
-* {
-   margin: 0; 
-   padding: 0; 
-}
-{% endhighlight %}
+<br />
+Specificity values are cumulative; thus, a selector containing two attribute identifiers and a class identifier (e.g., 
+**[name="email"][type="checkbox"].hello**) has a specificity of
+**0,0,3,0**. Specificity values are sorted from right to left; thus, a selector containing 4 element identifiers (**0,0,0,4**) has a lower specificity than a selector containing just a single class identifier (**0,0,1,0**).
 
-## Element Selector
+The !important directive gives a declaration more weight than nonimportant
+declarations. The declaration retains the specificity of its selectors and is used
+only in comparison with other important declarations
 
-Also referred to simply as a "type selector", this selector must match one or more HTML elements of the same name.
+If you want to learn more about css selectors, you can read my [last article](https://it.badykov.com/blog/2020/08/08/css-selectors/) about css selectors.
 
-#### Example:
+## Inheritance
 
-{% highlight css %}
-p {
-   font-family: arial, helvetica, sans-serif; 
-}
-{% endhighlight %}
+{% include figure.html path="blog/css-precedence/inheritance.jpg" %}
 
-## Id Selector
+When no value for an inherited property has been specified on an element, the element gets the computed value of that property on its parent element. Only the root element of the document gets the initial value given in the property's summary.
 
-An ID selector is declared using a hash, or pound symbol (#) preceding a string of
-characters. The stringof characters is defined bythe developer. This selector matches
-any HTML element that has an ID attribute with the samevalue as thatof the selector,
-but minus the hash symbol.
+Examples of non-inherited properties are **padding**, **border**, **margin**, and **background**.
 
-#### Example:
+## The Cascade
 
-{% highlight css %}
-#paragraph1 {
-    margin: 0; 
-}
-{% endhighlight %}
+{% include figure.html path="blog/css-precedence/cascade.jpeg" %}
 
-## Class Selector
+The cascade is how CSS resolves conflicts between styles; in other words, it
+is the mechanism by which a user agent decides, for example, what color to
+make an element when two different rules apply to it and each one tries to set
+a different color. Here’s how the cascade works:
+1. Find all rules with a selector that matches a given element.
+2. Sort all declarations applying to the given element by explicit weight.
+Those rules that are marked !important have a higher explicit weight
+than those that are not.
+3. Sort all declarations applying to the given element by origin. There are
+three basic origins: author, reader, and user agent. Under normal
+circumstances, the author’s styles win out over the reader’s styles.
+Howerver, !important reader styles are stronger than any other styles,
+including !important author styles. Both author and reader styles
+override the user agent’s default styles.
+4. Sort all declarations applying to the given element by specificity. Those
+elements with a higher specificity have more weight than those with
+lower specificity.
+5. Sort all declarations applying to the given element by order. The later a
+declaration appears in the stylesheet or document, the more weight it is
+given. Declarations that appear in an imported stylesheet are considered
+to come before all declarations within the stylesheet that imports them.
 
-The class selector is the most useful of all CSS selectors. It's declared with a dot
-preceding a string of one or more characters. Just as is the case with an ID selector,
-this string of characters is defined by the developer. The class selector also matches
-all elements on the page that have their class attribute set to the same value as the
-class, minus the dot.
+## See Also
 
-#### Example:
+[Types of CSS Selectors](https://it.badykov.com/blog/2020/08/08/css-selectors/)
 
-{% highlight css %}
-.note {
-   color: red; 
-   background-color: yellow; 
-   font-weight: bold; 
-}
-{% endhighlight %}
-
-## Attribute Selector
-
-The attribute selector targets elements based on the presence and/or value of HTML
-attributes, and is declared using square brackets
-
-#### Example:
-
-{% highlight css %}
-a[href="http://www.somesite.com"] {
-   font-weight: bold; 
-}
-{% endhighlight %}
-
-## Descendant Combinator
-
-The class selector is the most useful of all CSS selectors. It's declared with a dot
-preceding a string of one or more characters. Just as is the case with an ID selector,
-this string of characters is defined by the developer. The class selector also matches
-all elements on the page that have their class attribute set to the same value as the
-class, minus the dot.
-
-#### Example:
-
-{% highlight css %}
-div#paragraph1 p.note {
-   color: green; 
-}
-{% endhighlight %}
-
-## Child Combinator
-
-A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements
-
-#### Example:
-
-{% highlight css %}
-p.note > b {
-   color: blue; 
-}
-{% endhighlight %}
-
-## General Sibling Combinator
-
-A selector that uses a general sibling combinator matches elements based on sibling
-relationships. That is to say, the selected elements are beside each other in the
-HTML.
-
-#### Example:
-
-{% highlight css %}
-h2 ~ p {
- margin-bottom: 20px;
-}
-{% endhighlight %}
-
-## Adjacent Sibling Combinator
-
-A selector that uses the adjacent sibling combinator uses the plus symbol (+), and
-is almost the same as the general sibling selector. The difference is that the targeted
-element must be an immediate sibling, not just a general sibling. 
-
-#### Example:
-
-{% highlight css %}
-p + p {
- text-indent: 1.5em;
- margin-bottom: 0;
-}
-{% endhighlight %}
-
-## Pseudo-class
-
-A pseudo-class uses a colon character to identify a pseudo-state that an element
-might be in—for example, the state of being hovered, or the state of being activated.
-
-#### Example:
-
-{% highlight css %}
-a:active {
-   color: blue;
-}
-{% endhighlight %}
-
-## Pseudo-element
-
-Finally, CSS has a selector referred to as a pseudo-element and, used appropriately,
-it can be very useful.
-
-#### Example:
-
-{% highlight css %}
-p::first-letter {
-   font-size: 32px;
-}
-{% endhighlight %}
