@@ -9,10 +9,11 @@ tags:
 thumbnail_path: blog/thumbs/shortcut.jpg
 add_to_popular_list: true
 ---
+Code editor keyboard shortcuts can save you a lot of time. They can replace several operations with just one. 
 
 {% include figure.html path=page.thumbnail_path %}
 
-Code editor keyboard shortcuts can save you a lot of time. They can replace several operations with just one. So a programmer who actively uses keyboard shortcuts will surpass the speed of writing code for a programmer that does not use shortcuts if they are equal in level of knowledge. In this post, I'd like to share my top 10 favorite keyboard shortcuts from the JetBrains editors.
+So a programmer who actively uses keyboard shortcuts will surpass the speed of writing code for a programmer that does not use shortcuts if they are equal in level of knowledge. In this post, I'd like to share my top 10 favorite keyboard shortcuts from the JetBrains editors.
 
 ## Why JetBrains IDE?
 
