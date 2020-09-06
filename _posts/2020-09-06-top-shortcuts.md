@@ -25,6 +25,7 @@ to a remote test server, manage the state of the data in the database, and save 
 to editors, it was necessary to install many other applications. All this had to be done until I installed ide from JetBrains. It saved me the hassle of switching 
 between applications frequently.
 
+## Shortcuts
 ### 1. Ctrl + W 
 
 Ctrl + W - Select successively increasing code blocks.
