@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Top 10 JetBrains IDEs shortcuts"
+title: "Top 10 JetBrains IDE keyboard shortcuts"
 tags:
 - css
 - css selectors
