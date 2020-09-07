@@ -2,10 +2,10 @@
 layout: post
 title: "Top 10 JetBrains IDE keyboard shortcuts"
 tags:
-- css
-- css selectors
-- front-end
-- css precedence
+- ide
+- jetbrains
+- shortcuts
+- programming
 thumbnail_path: blog/thumbs/shortcut.jpg
 add_to_popular_list: true
 ---
