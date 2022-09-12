@@ -11,9 +11,7 @@ add_to_popular_list: true
 
 
 {% include figure.html path="blog/simple-and-usefull-postgresql-features/elephant.png" %}
-I recently spent some time refreshing and deepening my knowledge of PostgreSQL to improve my skills and experience in using it (writing and optimizing queries, creating new objects, etc.) as I use PostgreSql a lot in my working time.
-And I found many awesome features and syntax sugar constructions that can tremendously ease your daily routine and eliminate problems that may appear while resolving sophisticated tasks.
-In this article, I will try to review 6 PostgreSql traits that seem to me the most important and easy-usable in a clear and brief way.
+I use PostgreSql a lot in my working time. So recently, I spent some time refreshing and deepening my knowledge of PostgreSQL to improve my skills and experience in using it (writing and optimizing queries, creating new objects, etc.). And I found many awesome features and syntax sugar constructions that can tremendously ease your daily routine and eliminate problems that may appear while resolving sophisticated tasks. In this article, I will try to review 6 PostgreSql traits that seem to me the most important and easy-usable in a clear and brief way.
 
 ## Features
 
