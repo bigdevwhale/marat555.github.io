@@ -20,7 +20,7 @@ In this article, I will try to review 6 PostgreSql traits that seem to me the mo
 * [Identity](#identity)
 * [COALESCE + NULLIF](#coalesce--nullif)
 * [Grouping set, rollup, cube](#grouping-set-rollup-cube)
-* [Common Table Expression](#common-table-expressions)
+* [Common Table Expression](#common-table-expression)
 * [Domains](#domains)
 * [USING keyword](#using-keyword)
 
@@ -235,7 +235,7 @@ Then, join the staff table with the CTE using the staff_id column.
 
 ## Domains
 
-In my opinion, this is a very useful feature for creating a custom type if you have many columns that need to be restricted by several of the same constraints, have data type and/or same default value.
+In my opinion, this is a very useful feature for creating a custom type if you have many columns that need to be restricted by several of the same constraints, have same data type and/or same default value.
 Let's create, for example, a VARCHAR domain that should have a not null constraint and a default value of 'N/A'.
 
 {% highlight sql %}
