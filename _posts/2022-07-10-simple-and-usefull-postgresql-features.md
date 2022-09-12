@@ -5,7 +5,7 @@ tags:
 - programming
 - PostgreSQL
 - SQL
-thumbnail_path: blog/programming-lofi/cover.jpg
+thumbnail_path: blog/simple-and-usefull-postgresql-features/elephant.png
 add_to_popular_list: true
 ---
 
@@ -91,7 +91,7 @@ postgres=# SELECT COALESCE(null,null, 1, 2, 3, null, 4);
 (1 row)
 {% endhighlight %}
 
-But what if you want similar to COALESCE for zero instead of null. In that case you can combine NULLIF with COALESCE:
+But what if you want similar to COALESCE function for zero instead of null. In that case you can combine NULLIF with COALESCE:
 The NULLIF function returns a null value if argument_1 equals to argument_2, otherwise it returns argument_1.
 
 See the following example:
