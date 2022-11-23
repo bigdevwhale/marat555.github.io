@@ -2,9 +2,8 @@
 layout: post
 title: "Science-Based Tool to Improve Concentration and Workspace at all"
 tags:
-- programming
-- PostgreSQL
-- SQL
+- concentration
+- music
 thumbnail_path: blog/music/main.jpeg
 add_to_popular_list: true
 ---
