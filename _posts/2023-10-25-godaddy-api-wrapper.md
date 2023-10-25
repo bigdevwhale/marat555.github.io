@@ -90,5 +90,5 @@ In conclusion, the GoDaddy API PHP Wrapper simplifies working with the GoDaddy A
 By offering a quick setup process and the ability to work in both production and test environments, GoDaddy API PHP Wrapper is a valuable tool for anyone looking to leverage the capabilities of GoDaddy's domain management services.
 
 ### License
-Our GoDaddy API PHP Wrapper is open source and available for use in your projects. It is released under MIT. You can find the full details in the project's GitHub [repository](https://github.com/bigdevwhale/godaddy-api-wrapper).
+GoDaddy API PHP Wrapper is open source and available for use in your projects. It is released under MIT. You can find the full details in the project's GitHub [repository](https://github.com/bigdevwhale/godaddy-api-wrapper).
 
