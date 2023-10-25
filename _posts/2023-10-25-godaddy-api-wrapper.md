@@ -16,8 +16,8 @@ In the ever-evolving world of web development and domain management, a seamless 
 GoDaddy is essential. GoDaddy offers a powerful API that allows developers to interact with their system programmatically, 
 providing a wide range of functionalities, from managing domains to handling accounts and performing domain-related tasks.
 
-However, working directly with APIs can sometimes be challenging. To simplify the process, we've developed a PHP wrapper 
-for the GoDaddy API. In this article, we'll introduce you to our GoDaddy API PHP Wrapper, explain how to use it, and highlight its key features.
+However, working directly with APIs can sometimes be challenging. To simplify the process, I've developed a PHP wrapper 
+for the GoDaddy API. In this article, I'll introduce you to our GoDaddy API PHP Wrapper, explain how to use it, and highlight its key features.
 
 ### Getting Started
 
