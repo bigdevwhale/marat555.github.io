@@ -76,7 +76,7 @@ The wrapper provides access to different API endpoints such as Abuse, Aftermarke
 Here's an example of how to use the Domains endpoint to list all domains associated with your account:
 
     ```php
-    $domains = $goDaddyAPI->domains->listDomains();
+    $domains = $goDaddyAPI->domains()->listDomains();
     print_r($domains);
     
 #### Configuration
