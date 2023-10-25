@@ -27,7 +27,7 @@ Before diving into the wrapper, you'll need to create API keys and secrets by fo
 
 #### Installation
 
-Our GoDaddy API PHP Wrapper can be easily installed via Composer, a widely used PHP dependency manager. We've made the installation process simple and hassle-free. Just run the following command in your project directory:
+Our GoDaddy API PHP Wrapper can be easily installed via Composer, a widely used PHP dependency manager. I've made the installation process simple and hassle-free. Just run the following command in your project directory:
 
     ```bash
     composer require your-namespace/godaddy-api-wrapper
