@@ -32,9 +32,10 @@ Our GoDaddy API PHP Wrapper can be easily installed via Composer, a widely used 
     ```bash
     composer require your-namespace/godaddy-api-wrapper
     ```
+    
 If you don't have Composer installed, you can [download it here](https://getcomposer.org/download/).
 
-###Using the Wrapper 
+### Using the Wrapper 
 
 Once you've installed the wrapper, including it in your PHP script is straightforward. Simply add the following line to your script:
 
@@ -44,9 +45,9 @@ Once you've installed the wrapper, including it in your PHP script is straightfo
     require 'vendor/autoload.php';
     ```
 
-    This line ensures the autoloading of necessary dependencies.
+This line ensures the autoloading of necessary dependencies.
 
-###Initialization
+### Initialization
 
 To start using the wrapper, initialize it with your API key and secret for either the test or production environment. We offer an easy way to switch between environments by setting the `isProduction` flag. 
 
