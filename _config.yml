@@ -21,7 +21,7 @@ thumbnail_path: "profile-photos/marat-badykov.jpg"
 # URLs
 contact_urls:
   github:
-    url: "https://github.com/Marat555"
+    url: "https://github.com/bigdevwhale"
     label: "GitHub"
     icon: "github-square"
   telegram:
