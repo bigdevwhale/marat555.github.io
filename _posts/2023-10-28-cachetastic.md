@@ -11,7 +11,6 @@ add_to_popular_list: true
 ---
 
 {% include figure.html path="blog/cachetastic/cachetastic.png" %}
-
 Are you tired of slow API responses and sluggish database queries in your Laravel application? 
 Do you wish you could sprinkle some magic dust and make your application's performance go 
 *poof* lightning fast? Well, we've got a secret weapon for you, and it's called **Cachetastic**.
