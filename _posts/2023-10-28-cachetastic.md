@@ -33,8 +33,6 @@ building your application while it handles the heavy lifting of caching. It's ti
 Cachetastic is not just another caching package; it's your secret weapon for optimizing caching in Laravel applications. 
 It's designed to make caching method results a breeze, and it's your ticket to faster responses, reduced latency, and 
 happier users.
-    
-
 
 ## What Makes Cachetastic Awesome?
 
@@ -57,6 +55,9 @@ Cachetastic puts you in control. You can force-refresh and update the cache with
 simply clear the cache, and Cachetastic will handle the rest.
 
 #### Laravel Integration
+
+If you're a Laravel developer, you'll love this. Cachetastic seamlessly integrates with Laravel's caching system. 
+It feels like it's part of the family.
 
 ## Getting Started
 
