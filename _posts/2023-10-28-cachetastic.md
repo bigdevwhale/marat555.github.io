@@ -105,7 +105,7 @@ In this case, consider using the setCustomCacheKey method for fine-grained contr
 
 ## Join the Cachetastic Party
 Cachetastic is open-source software licensed under the MIT License. We also welcome contributions from the open-source community. 
-Feel free to submit bug reports, feature requests, or pull requests on our [GitHub repository](https://github.com/bigdevwhale/cachetastic).
+Feel free to submit bug reports, feature requests, or pull requests on [GitHub repository](https://github.com/bigdevwhale/cachetastic).
 
 So why wait? Supercharge your Laravel application with Cachetastic and turbocharge your caching game! 
 Give it a try and experience the benefits for yourself. Happy caching! 💨✨
