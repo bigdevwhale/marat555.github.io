@@ -96,6 +96,7 @@ It feels like it's part of the family.
     $resultStatic = $cacheServiceStatic->retrieveOrCache();
     ```
 4. Customize caching, force clear the cache when needed, and enjoy the speed of Cachetastic!
+
 #### Overwriting Cache Keys
 
 One thing to keep in mind: if two methods are executed in the same class with only array parameters, 
