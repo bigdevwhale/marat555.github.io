@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Habit & Rewards System — A Personal Gamification Framework"
+title: "I Built a Habit & Reward System That Actually Works — Download It Here"
 tags:
 - productivity
 - habits
