@@ -122,8 +122,7 @@ This visibility keeps me motivated and helps me spot trends. If I had a bad week
 
 I’d love for more people to experiment with this idea.
 
-💡 [Here’s a blank version of the sheet you can copy](https://docs.google.com/spreadsheets/d/1zaSfL4eZLlWLyZxX_GSgkh2CbiqeN0VmNUP4h1RDL60/edit?usp=sharing)  
-(coming soon — drop me a message if you want early access)
+💡 [Here’s a version of the sheet you can copy](https://docs.google.com/spreadsheets/d/1zaSfL4eZLlWLyZxX_GSgkh2CbiqeN0VmNUP4h1RDL60/edit?usp=sharing)
 
 ---
 
