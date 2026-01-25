@@ -15,14 +15,14 @@ add_to_popular_list: true
 
 ### Laravel applications fail in predictable ways --- and most teams discover it too late.
 
-{% include figure.html path=page.thumbnail_path path="blog/laravel-secure-baseline-post/2.jpg" %}
-
 Independent security reviews consistently show that **the majority of
 Laravel applications ship with at least one critical misconfiguration**:
 debug mode enabled, missing security headers, unsafe CORS rules, or weak
 session cookies. These issues rarely break functionality, which is why
 they often reach production unnoticed --- until a penetration test,
 compliance audit, or real-world incident exposes them.
+
+{% include figure.html path=page.thumbnail_path path="blog/laravel-secure-baseline-post/2.jpg" %}
 
 **Laravel Secure Baseline** was built to close this gap.
 
