@@ -7,7 +7,8 @@ tags:
 - php
 - devsecops
 - github
-add_to_popular_list: false
+thumbnail_path: blog/laravel-secure-baseline-post/1.jpg
+add_to_popular_list: true
 ---
 
 {% include figure.html path=page.thumbnail_path path="blog/laravel-secure-baseline-post/1.jpg" %}
