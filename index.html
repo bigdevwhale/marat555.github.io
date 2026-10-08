@@ -7,3 +7,11 @@ nav_item: home
 ---
 
 {% include about.html %}
+
+<section class="home-latest">
+  <h2 class="section-heading mono">~/blog <span class="section-heading-hint">// latest</span></h2>
+  {% for post in site.posts limit:5 %}
+    {% include post-outline.html post=post exclude_divider=forloop.last %}
+  {% endfor %}
+  <p class="mt2 mb0"><a class="view-all mono" href="/blog">ls ./blog --all &rarr;</a></p>
+</section>

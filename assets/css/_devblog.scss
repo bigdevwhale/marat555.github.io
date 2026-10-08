@@ -1,0 +1,410 @@
+// Dev-blog redesign layer. Imported last so its overrides win the cascade
+// over the legacy Basscss-based theme.
+
+// ------------------------------------------------------------------ base
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  transition: background-color .15s ease, color .15s ease;
+}
+
+h1, h2, h3, h4, h5, h6,
+.header-font {
+  font-family: var(--font-mono);
+  color: var(--color-heading);
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--color-link); }
+
+a:hover,
+a h1:hover, a h2:hover, a h3:hover, a h4:hover, a h5:hover, a h6:hover,
+.link-hover-color {
+  color: var(--color-link-hover);
+}
+
+::selection { background: var(--color-selection); }
+
+.mono { font-family: var(--font-mono); }
+
+.nav-button {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+// ---------------------------------------- legacy utility re-pointing
+// Same selectors as Basscss/custom theme, later in the cascade.
+
+.gray, .mid-gray, .silver, .light-gray { color: var(--color-text-muted); }
+.black, .dark-gray { color: var(--color-heading); }
+
+.bg-white { background-color: var(--color-surface); }
+.bg-splash-gray { background-color: var(--color-header-band); }
+
+.header-color { color: var(--color-heading); }
+.body-color { color: var(--color-text); }
+.link-color { color: var(--color-link); }
+.bg-link-color { background-color: var(--color-link); }
+.bg-link-hover-color { background-color: var(--color-link-hover); }
+.hover-background:hover { background-color: var(--color-link-hover); }
+
+.border,
+.border-top, .border-right, .border-bottom, .border-left,
+.border-gray, .border-silver { border-color: var(--color-border); }
+
+.button-outline { color: var(--color-text); }
+.button-outline:hover,
+.button-outline:focus { color: var(--color-accent); }
+
+// Divider dots on the music/speaking pages
+.circle-line:after {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+  box-shadow: var(--color-bg) 0 0 0 5px;
+}
+
+// ------------------------------------------------------------------ layout
+
+.container { max-width: 42rem; }
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-nav-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .25rem .75rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: .6rem 1rem;
+}
+
+.site-nav-wordmark {
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--color-heading);
+}
+
+.site-nav-wordmark:hover { color: var(--color-link-hover); }
+
+.site-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-nav-link {
+  color: var(--color-text-muted);
+  font-size: .85rem;
+}
+
+.site-nav-link:hover { color: var(--color-link-hover); }
+.site-nav-link.is-active { color: var(--color-accent); }
+.site-nav-icon { font-size: .85rem; }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  font-size: .95rem;
+  color: var(--color-text-muted);
+}
+
+.theme-toggle:hover { color: var(--color-accent); }
+
+// ------------------------------------------------------------------- home
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0 .5rem;
+}
+
+.hero-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.hero-prompt {
+  color: var(--color-text-muted);
+  margin: 0 0 .25rem;
+}
+
+.hero-dollar { color: var(--color-accent); }
+
+.hero-name {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.hero-role {
+  color: var(--color-text-muted);
+  margin: .3rem 0 0;
+}
+
+.home-latest { margin-top: 2.5rem; }
+
+.section-heading {
+  font-size: 1rem;
+  color: var(--color-heading);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: .5rem;
+  margin: 0 0 .25rem;
+}
+
+.section-heading-hint {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.view-all { font-size: .85rem; }
+
+// ------------------------------------------------------------- post rows
+
+.post-row--divided { border-bottom: 1px solid var(--color-border); }
+
+.post-row-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: .65rem .25rem;
+}
+
+.post-row-date {
+  flex: 0 0 10ch;
+  color: var(--color-text-muted);
+  font-size: .8rem;
+}
+
+.post-row-title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-heading);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.post-row-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.post-row-thumb {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 32em) {
+  .post-row-thumb { width: 64px; height: 43px; }
+}
+
+.post-row-link:hover .post-row-title { color: var(--color-link-hover); }
+
+.post-row-tags {
+  color: var(--color-text-muted);
+  font-size: .75rem;
+  margin-top: .15rem;
+}
+
+@media (max-width: 40em) {
+  .post-row-tags { display: none; }
+}
+
+// ------------------------------------------------------------ blog sub-nav
+
+.writing-nav {
+  display: flex;
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1rem;
+}
+
+.writing-nav-link {
+  color: var(--color-text-muted);
+  padding-bottom: .5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.writing-nav-link:hover { color: var(--color-link-hover); }
+
+.writing-nav-link.is-active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.chip {
+  display: inline-block;
+  padding: .25rem .6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+}
+
+.chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+// -------------------------------------------------------------- pagination
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+
+.pagination-link { color: var(--color-link); }
+
+.pagination-link.is-disabled {
+  color: var(--color-text-muted);
+  opacity: .5;
+}
+
+.pagination-info { color: var(--color-text-muted); }
+
+// --------------------------------------------------------------- post page
+
+.post-header { margin: 1rem 0 2rem; }
+
+.post-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 .75rem;
+}
+
+.post-meta {
+  color: var(--color-text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  align-items: baseline;
+}
+
+.post-tag { color: var(--color-text-muted); }
+.post-tag:hover { color: var(--color-link-hover); }
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.post-content h2 { font-size: 1.35rem; margin-top: 2.5rem; }
+.post-content h3 { font-size: 1.15rem; margin-top: 2rem; }
+
+.post-content blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--color-text-muted);
+}
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem auto;
+}
+
+.post-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--color-border);
+  padding: .4rem .65rem;
+}
+
+.post-content th {
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  font-size: .8rem;
+  text-align: left;
+}
+
+// Wins over the _blog.scss 500px cap by cascade order
+.post .post-content img {
+  max-height: 75vh;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+figure img {
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+figcaption {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: .72rem;
+}
+
+// ------------------------------------------------------------ author/share
+
+.author-share {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.author-share-bio {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.author-name { margin: 0 0 .25rem; font-size: 1rem; }
+.author-bio { margin: 0; color: var(--color-text-muted); }
+
+.author-share-share h3 {
+  margin: 0 0 .5rem;
+  font-size: .8rem;
+  color: var(--color-text-muted);
+}
+
+// ---------------------------------------------------------------- comments
+
+.comments-section {
+  border-top: 1px solid var(--color-border);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+[name="comments"] { scroll-margin-top: 5rem; }

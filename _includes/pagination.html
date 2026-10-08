@@ -1,16 +1,18 @@
-<section role="pagination" class="clearfix center h5 gray mt4 mb3">
+<nav class="pagination mono h6" role="navigation" aria-label="Pagination">
   {% if paginator.previous_page %}
-    {% assign prev_class="left button button-outline regular" %}
     {% if paginator.previous_page == 1 %}
-      <a href="/blog" title="Previous Page" class="{{ prev_class }}">&laquo; Newer Posts</a>
+      {% assign prev_href = "/blog" %}
     {% else %}
-      <a href="/blog/page{{ paginator.previous_page }}/" title="Previous Page" class="{{ prev_class }}">&laquo; Newer Posts</a>
+      {% capture prev_href %}/blog/page{{ paginator.previous_page }}/{% endcapture %}
     {% endif %}
+    <a href="{{ prev_href }}" class="pagination-link">&larr; newer</a>
   {% else %}
-    <div class="left px4">&nbsp;</div>
+    <span class="pagination-link is-disabled">&larr; newer</span>
   {% endif %}
-  <span class="button-height"> Page {{paginator.page}} of {{paginator.total_pages}}</span>
-  {% if paginator.next_page %} 
-    <a href="/blog/page{{ paginator.next_page }}/" title="Next Page" class="right button button-outline regular">Older Posts &raquo;</a>
-  {% endif %} 
-</section>
+  <span class="pagination-info">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/blog/page{{ paginator.next_page }}/" class="pagination-link">older &rarr;</a>
+  {% else %}
+    <span class="pagination-link is-disabled">older &rarr;</span>
+  {% endif %}
+</nav>

@@ -1,9 +1,10 @@
-<div class="center">
-  <a href="{{ site.base_url }}">
-    {% include image.html path=site.thumbnail_path alt=site.name class="border bg-white p1 border-light-gray circle square-100" %}
-  </a>
-  {% include header-h1.html %}
-  <h2 class="page-description body-font gray mt0 h3 regular">
-    Full-stack developer
-  </h2>
+<div class="hero">
+  <div class="hero-avatar-wrap">
+    {% include image.html path=site.thumbnail_path alt=site.name class="hero-avatar" %}
+  </div>
+  <div class="hero-body">
+    <p class="hero-prompt mono h5"><span class="hero-dollar">$</span> whoami</p>
+    <h1 class="hero-name">{{ site.name }}</h1>
+    <p class="hero-role mono h5">full-stack developer</p>
+  </div>
 </div>

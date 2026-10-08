@@ -1,6 +1,10 @@
-<div class="container">
-  {% include header-h1.html h1_class="mt0 mb1" %}
-  <div>{% include post-metadata.html post=page time_estimate=true time_estimate_minutes=page.time_estimate_minutes %}</div>
-</div>
-
-  
+<header class="post-header">
+  <h1 class="post-title mt0 mb1">
+    {% if page.header_title %}
+      {{ page.header_title }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </h1>
+  {% include post-metadata.html post=page time_estimate=true time_estimate_minutes=page.time_estimate_minutes show_comments=true %}
+</header>

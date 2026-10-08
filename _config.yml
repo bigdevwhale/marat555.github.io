@@ -4,7 +4,6 @@ url: "https://it.badykov.com"
 # Internal nav
 nav:
   main:
-    profile: "/"
 #    music: "/music"
     blog: "/blog"
   blog:
@@ -15,7 +14,7 @@ nav:
 
 # Bio settings
 name: "Marat Badykov"
-description: "Hi! My name is Marat Badykov. I'm a full-stack web developer. I like to solve interesting and non-standard tasks, I enjoy writing Php, Ruby, and Js. I created this blog for sharing my thoughts about programming, software engineering and other cool stuff."
+description: "Hi! My name is Marat Badykov. I'm a full-stack web developer. I like to solve interesting and non-standard tasks. I created this blog for sharing my thoughts about programming, software engineering and other cool stuff."
 thumbnail_path: "profile-photos/marat-badykov.jpg"
 
 # URLs

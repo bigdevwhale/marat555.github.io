@@ -1,18 +1,15 @@
 {% capture post_title_element %}{% if include.post_title_element %}{{ include.post_title_element }}{% else %}h2{% endif %}{% endcapture %}
-<article class="mxn2 clearfix mt4 mb2 pb3 pt1{% unless include.exclude_divider %} border-bottom border-light-gray circle-line{% endunless %}">
-  <div class="col sm-col-4 px2 mb2">
-    <a href="{{ include.post.url }}" class="header-color link-hover-color">
-      {% if include.post.thumbnail_path %}
-        {% include image.html path=include.post.thumbnail_path alt=include.post.title %}
-      {% else %}
-        <div class="border border-light-gray h1 py4 px4 center">Aa</div>
+<article class="post-row{% unless include.exclude_divider %} post-row--divided{% endunless %}">
+  <a href="{{ include.post.url }}" class="post-row-link">
+    <time class="post-row-date" datetime="{{ include.post.date | date:'%Y-%m-%d' }}">{{ include.post.date | date:'%Y-%m-%d' }}</time>
+    <div class="post-row-main">
+      <{{ post_title_element }} class="post-row-title">{{ include.post.title }}</{{ post_title_element }}>
+      {% if include.post.tags.size > 0 %}
+        <div class="post-row-tags mono">{% for tag in include.post.tags %}#{{ tag }} {% endfor %}</div>
       {% endif %}
-    </a>
-  </div>
-  <div class="col sm-col-8 px2">
-    <a href="{{ include.post.url }}"><{{ post_title_element }} class="mt0">{{ include.post.title }}</{{ post_title_element }}></a>
-    <p class="mb0 left-align">{{ include.post.excerpt | strip_html | truncate: 165, '...'  }}</p>
-    <div><a href="{{ include.post.url }}" class="h6">Continue Reading &raquo;</a></div>
-    {% include post-metadata.html post=include.post %}
-  </div>
+    </div>
+    {% if include.post.thumbnail_path %}
+      {% include image.html path=include.post.thumbnail_path alt=include.post.title class="post-row-thumb" %}
+    {% endif %}
+  </a>
 </article>

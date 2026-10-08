@@ -1,12 +1,14 @@
-<nav class="clearfix border-bottom border-light-gray">
-  <div class="left">
-    <a href="{{ site.url }}" class="button py2 button-transparent nav-button caps">{{ site.name }}</a>
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="site-nav-inner">
+    <a href="/" class="site-nav-wordmark mono{% if page.nav_item == 'home' %} is-active{% endif %}">~/marat</a>
+    <div class="site-nav-right">
+      {% for nav_item in site.nav.main %}
+        <a href="{{ nav_item[1] }}" class="site-nav-link mono{% if page.nav_item == nav_item[0] %} is-active{% endif %}">{{ nav_item[0] }}</a>
+      {% endfor %}
+      <a href="{{ site.nav.blog.rss }}" class="site-nav-link site-nav-icon" aria-label="RSS feed"><i class="fa fa-rss" aria-hidden="true"></i></a>
+      <button type="button" class="theme-toggle site-nav-icon" data-theme-toggle aria-label="Switch theme">
+        <i class="fa fa-sun-o" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
-  <ul class="right list-reset m0 nav-collapse">
-    {% for nav_item in site.nav.main %}
-      <li class="inline-block m0">
-        <a href="{{ nav_item[1] }}" class="button button-transparent py2 h6 nav-button caps{% if page.nav_item == nav_item[0] %} link-color{% endif %}">{{ nav_item[0] }}</a>
-      </li>
-    {% endfor %}
-  </ul>
 </nav>

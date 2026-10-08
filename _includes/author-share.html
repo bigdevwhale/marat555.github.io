@@ -1,17 +1,17 @@
-<div class="circle-line-image center mt1">
-  <a href="{{ site.url }}">
-    {% include image.html path=site.thumbnail_path alt=site.name class="border bg-white border-light-gray circle square-100" %}
-  </a>
-</div>
-<div class="clearfix">
-  <div class="sm-col sm-col-7">
-    <a href="{{ site.url }} "><h3>{{ site.name }}</h3></a>
-    <p class="h5">
-      Full-stack web developer. I enjoy writing Php, Java, and Js.
-    </p>
+<div class="author-share">
+  <div class="author-share-bio">
+    <a href="{{ site.url }}">
+      {% include image.html path=site.thumbnail_path alt=site.name class="author-avatar" %}
+    </a>
+    <div>
+      <a href="{{ site.url }}"><h3 class="author-name">{{ site.name }}</h3></a>
+      <p class="author-bio h5">
+        Full-stack web developer. I write about programming, software engineering and other cool stuff.
+      </p>
+    </div>
   </div>
-  <div class="sm-col-right">
-    <h3>Share this post</h3>
+  <div class="author-share-share">
+    <h3 class="mono">share</h3>
     {% include share-buttons.html %}
   </div>
 </div>

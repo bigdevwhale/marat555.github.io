@@ -6,8 +6,6 @@ nav_item_writing: tags
 header_title: Tags
 include_header: writing_header.html
 is_tags_page: true
-include_comments:
-  count: true
 ---
 
 {% include writing-nav.html %}
@@ -23,7 +21,7 @@ include_comments:
 <div class="clearfix mxn1 mt3">
   {% for tag in sortedtags %}
     <div class="col px1 mb1">
-      <a href="#{{ tag }}" class="button button-narrow button-outline dark-gray h5">{{ tag }} ({{ site.tags[tag].size }})</a>
+      <a href="#{{ tag }}" class="chip mono h6">{{ tag }} <span class="muted">({{ site.tags[tag].size }})</span></a>
     </div>
   {% endfor %}
 </div>
@@ -31,7 +29,7 @@ include_comments:
 {% for tag in sortedtags %}
   <a name="{{ tag }}"></a>
   <section class="mb4 mt4">
-    <h2 class="border-bottom border-light-gray mb3 pb1">{{ tag }} <span class="gray">({{ site.tags[tag].size }} posts)</span></h2>
+    <h2 class="border-bottom mb3 pb1">{{ tag }} <span class="gray">({{ site.tags[tag].size }} posts)</span></h2>
     {% for post in site.tags[tag] %}
       {% include post-outline.html post=post exclude_divider=forloop.last %}
     {% endfor %}

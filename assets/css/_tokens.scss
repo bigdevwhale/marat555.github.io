@@ -1,0 +1,78 @@
+// Design tokens. Values must be literal (no SCSS variables inside custom
+// properties — Ruby Sass passes them through raw).
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-surface-raised: #21262d;
+  --color-text: #c9d1d9;
+  --color-text-muted: #8b949e;
+  --color-heading: #e6edf3;
+  --color-border: #30363d;
+  --color-link: #3fb950;
+  --color-link-hover: #56d364;
+  --color-accent: #3fb950;
+
+  --color-code-bg: #161b22;
+  --color-code-border: #30363d;
+  --color-code-text: #e6edf3;
+
+  --color-header-band: #0d1117;
+  --color-nav-bg: rgba(13, 17, 23, 0.85);
+  --color-selection: rgba(63, 185, 80, 0.35);
+
+  --syn-comment: #8b949e;
+  --syn-keyword: #ff7b72;
+  --syn-string: #a5d6ff;
+  --syn-number: #79c0ff;
+  --syn-function: #d2a8ff;
+  --syn-type: #ffa657;
+  --syn-tag: #7ee787;
+  --syn-attr: #79c0ff;
+  --syn-constant: #79c0ff;
+  --syn-error: #f85149;
+  --syn-inserted: #3fb950;
+  --syn-deleted: #f85149;
+
+  --font-body: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg: #ffffff;
+  --color-surface: #f6f8fa;
+  --color-surface-raised: #eaeef2;
+  --color-text: #1f2328;
+  --color-text-muted: #57606a;
+  --color-heading: #1f2328;
+  --color-border: #d0d7de;
+  --color-link: #1a7f37;
+  --color-link-hover: #116329;
+  --color-accent: #1a7f37;
+
+  --color-code-bg: #f6f8fa;
+  --color-code-border: #d0d7de;
+  --color-code-text: #24292f;
+
+  --color-header-band: #ffffff;
+  --color-nav-bg: rgba(255, 255, 255, 0.85);
+  --color-selection: rgba(26, 127, 55, 0.25);
+
+  --syn-comment: #6e7781;
+  --syn-keyword: #cf222e;
+  --syn-string: #0a3069;
+  --syn-number: #0550ae;
+  --syn-function: #8250df;
+  --syn-type: #953800;
+  --syn-tag: #116329;
+  --syn-attr: #0550ae;
+  --syn-constant: #0550ae;
+  --syn-error: #cf222e;
+  --syn-inserted: #1a7f37;
+  --syn-deleted: #cf222e;
+}
