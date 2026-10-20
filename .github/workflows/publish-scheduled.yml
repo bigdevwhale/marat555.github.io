@@ -1,0 +1,24 @@
+name: Publish scheduled posts
+
+# Jekyll skips posts dated in the future, and GitHub Pages only rebuilds on a push. This asks Pages to
+# rebuild once a day, so a post written ahead of time appears on its own date with no new commit.
+# 09:17 UTC is just after midnight in the site's timezone (America/Los_Angeles), summer or winter.
+on:
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a Pages build
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
