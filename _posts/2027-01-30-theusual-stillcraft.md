@@ -29,7 +29,7 @@ The name and address, the front, the stamps (sockets, quiet, laptop OK, open lat
 
 Every café gets a packet in one of five prints and ten colourways, pinned to the cork board with a paper tag: "yours · 27", "8 visits", "from Anya", "2019–2026".
 
-### A ring for every cup
+### A coffee ring for every cup
 
 "I'm in a café" writes down a cup. Its ring goes on the page in the colour of the drink, and cups of the usual pile up in the same spot. Beside a ring there's room for a pencil line: who was there, what happened.
 
