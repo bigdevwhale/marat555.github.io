@@ -11,7 +11,7 @@ tags:
 thumbnail_path: blog/theusual-post/hero.jpg
 ---
 
-Map apps rate cafés by strangers' stars, but the cafés I care about are the three or four I keep going back to. I wanted somewhere to keep them, so I built a notebook for them.
+We usually pick cafés by stars and reviews on a map, but the ones I care about are the three or four I keep going back to. I wanted somewhere to keep them, so I built a notebook for them.
 
 A diary of the cafés you keep coming back to. Every café gets a page in a notebook and a sugar packet pinned to a cork board under string lights. Every cup leaves a coffee ring on the page, and the rings pile up where your cup always lands. From the tenth visit the café is yours, and the app asks the barista's question: the usual? Free, no ads, no account.
 
