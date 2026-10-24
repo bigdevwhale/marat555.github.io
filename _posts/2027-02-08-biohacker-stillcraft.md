@@ -53,7 +53,7 @@ Every day a sealed parcel arrives from the lab with a card for a protocol you ha
 
 ### Version and patch notes
 
-You start at v1.0, and every installed mod bumps the version. Each Monday brings patch notes: what was installed and rejected, which gauge went up, known issues. Forty hidden combos, such as morning light with cold water or a walk with a friend, are found by installing both halves and drawn as gold links on the blueprint.
+You start at v1.0, and every installed mod bumps the version. Each Monday brings patch notes: what was installed and rejected, which gauge went up, known issues. Forty hidden combos, such as morning light with cold water or a walk with a friend, are found by installing both halves and drawn as gold rings on the blueprint.
 
 ### Glitches, not failures
 
