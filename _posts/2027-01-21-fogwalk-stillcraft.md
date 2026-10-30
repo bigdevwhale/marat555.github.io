@@ -17,7 +17,7 @@ Fogwalk turns your city into an old atlas lost in mist. Wherever you walk, the m
 
 {% include figure.html path=page.thumbnail_path %}
 
-**[Download the APK](https://github.com/bigdevwhale/fogwalk/releases/latest/download/Fogwalk.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/fogwalk/) · [Source on GitHub](https://github.com/bigdevwhale/fogwalk)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.fogwalk)** · [Download the APK](https://github.com/bigdevwhale/fogwalk/releases/latest/download/Fogwalk.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/fogwalk/) · [Source on GitHub](https://github.com/bigdevwhale/fogwalk)
 
 ## What's inside
 
@@ -114,11 +114,11 @@ GPS runs only while the map is open or during a journey you started. Stop the jo
 - **Permissions:** Location while in use, a location service for journeys with the screen off, notifications, and internet for map tiles only.
 - **License:** MIT · map data © OpenStreetMap contributors
 
-1. Download the APK on your phone.
-1. Open it and allow installs from this source when Android asks.
+1. Install it from Google Play, or download the APK on your phone.
+1. If you took the APK, open it and allow installs from this source when Android asks.
 1. Allow location, tap Set out and head for the shrine of the day.
 
-**[Download the APK](https://github.com/bigdevwhale/fogwalk/releases/latest/download/Fogwalk.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/fogwalk/) · [Source on GitHub](https://github.com/bigdevwhale/fogwalk)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.fogwalk)** · [Download the APK](https://github.com/bigdevwhale/fogwalk/releases/latest/download/Fogwalk.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/fogwalk/) · [Source on GitHub](https://github.com/bigdevwhale/fogwalk)
 
 ---
 
