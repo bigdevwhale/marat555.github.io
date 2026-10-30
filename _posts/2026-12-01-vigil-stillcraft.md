@@ -16,7 +16,7 @@ An app for vows of abstinence and practice: no sugar, a cold shower, mornings wi
 
 {% include figure.html path=page.thumbnail_path %}
 
-**[Download the APK](https://github.com/bigdevwhale/vigil/releases/latest/download/Vigil.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/vigil/) · [Source on GitHub](https://github.com/bigdevwhale/vigil)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.vigil)** · [Download the APK](https://github.com/bigdevwhale/vigil/releases/latest/download/Vigil.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/vigil/) · [Source on GitHub](https://github.com/bigdevwhale/vigil)
 
 ## What's inside
 
@@ -87,11 +87,11 @@ There's no backup in this first version yet: vows stay on the phone they were se
 - **Permissions:** The microphone, only if you record your reason in your own voice. Notifications for the morning rule and the evening examen. No internet.
 - **License:** MIT
 
-1. Download the APK on your phone.
-1. Open it and allow installs from this source when Android asks.
+1. Install it from Google Play, or download the APK on your phone.
+1. If you took the APK, open it and allow installs from this source when Android asks.
 1. Pick a vow from the catalog, write why, and hold the wax until the seal sets.
 
-**[Download the APK](https://github.com/bigdevwhale/vigil/releases/latest/download/Vigil.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/vigil/) · [Source on GitHub](https://github.com/bigdevwhale/vigil)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.vigil)** · [Download the APK](https://github.com/bigdevwhale/vigil/releases/latest/download/Vigil.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/vigil/) · [Source on GitHub](https://github.com/bigdevwhale/vigil)
 
 ---
 
