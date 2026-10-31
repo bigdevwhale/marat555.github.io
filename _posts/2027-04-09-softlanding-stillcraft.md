@@ -28,7 +28,7 @@ The day card says it plainly: how many calories are left, a strip with what's ea
 
 ### Fast to log
 
-There are two big buttons on the main screen, a scanner and "Add food". The scanner is Google's own, so the app needs no camera permission, and it reads ordinary barcodes as well as the Russian «Честный знак» DataMatrix codes. An unknown pack is looked up in Open Food Facts and then kept on the phone.
+There are two big buttons on the main screen, a scanner and "Add food". The scanner is Google's own, so the app needs no camera permission, and it reads ordinary barcodes as well as the DataMatrix codes printed on many packs. An unknown pack is looked up in Open Food Facts and then kept on the phone.
 
 The search box also takes a whole meal: "buckwheat 200, 2 eggs, cappuccino" becomes three entries and one button. Above the search sit "same as yesterday" and the foods you usually have for this meal, each with a "+" that adds it at the amount you had last time.
 
