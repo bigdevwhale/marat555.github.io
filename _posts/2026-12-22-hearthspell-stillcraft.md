@@ -17,7 +17,7 @@ The old master left his tower to you, his apprentice. The tower is your home: ev
 
 {% include figure.html path=page.thumbnail_path %}
 
-**[Download the APK](https://github.com/bigdevwhale/hearthspell/releases/latest/download/Hearthspell.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/hearthspell/) · [Source on GitHub](https://github.com/bigdevwhale/hearthspell)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.hearthspell)** · [Download the APK](https://github.com/bigdevwhale/hearthspell/releases/latest/download/Hearthspell.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/hearthspell/) · [Source on GitHub](https://github.com/bigdevwhale/hearthspell)
 
 ## What's inside
 
@@ -87,11 +87,11 @@ Settings → Backup saves the whole tower, every cast and the shopping list into
 - **Permissions:** Notifications for one quiet reminder a day, only when imps have moved in or a letter has arrived. No internet.
 - **License:** MIT
 
-1. Download the APK on your phone.
-1. Open it and allow installs from this source when Android asks.
+1. Install it from Google Play, or download the APK on your phone.
+1. If you took the APK, open it and allow installs from this source when Android asks.
 1. Read the master's note, pick your rooms and their chores, and cast your first spell.
 
-**[Download the APK](https://github.com/bigdevwhale/hearthspell/releases/latest/download/Hearthspell.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/hearthspell/) · [Source on GitHub](https://github.com/bigdevwhale/hearthspell)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.hearthspell)** · [Download the APK](https://github.com/bigdevwhale/hearthspell/releases/latest/download/Hearthspell.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/hearthspell/) · [Source on GitHub](https://github.com/bigdevwhale/hearthspell)
 
 ---
 
