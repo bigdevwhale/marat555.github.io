@@ -16,7 +16,7 @@ So I made it go somewhere. Farwalker takes every step your phone counts and walk
 
 {% include figure.html path=page.thumbnail_path %}
 
-**[Download the APK](https://github.com/bigdevwhale/farwalker/releases/latest/download/Farwalker.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/farwalker/) · [Source on GitHub](https://github.com/bigdevwhale/farwalker)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.farwalker)** · [Download the APK](https://github.com/bigdevwhale/farwalker/releases/latest/download/Farwalker.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/farwalker/) · [Source on GitHub](https://github.com/bigdevwhale/farwalker)
 
 ## What's inside
 
@@ -84,11 +84,11 @@ Only the traveller's coordinates, for the weather where they are. Steps and the 
 - **Permissions:** physical activity, for the step counter; notifications, for news of the road; internet, for the weather.
 - **License:** MIT.
 
-1. Download the APK on your phone.
-1. Open it and allow installs from this source when Android asks.
+1. Install it from Google Play, or download the APK on your phone.
+1. If you took the APK, open it and allow installs from this source when Android asks.
 1. Pick your town, allow step counting and choose a goal.
 
-**[Download the APK](https://github.com/bigdevwhale/farwalker/releases/latest/download/Farwalker.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/farwalker/) · [Source on GitHub](https://github.com/bigdevwhale/farwalker)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.farwalker)** · [Download the APK](https://github.com/bigdevwhale/farwalker/releases/latest/download/Farwalker.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/farwalker/) · [Source on GitHub](https://github.com/bigdevwhale/farwalker)
 
 ---
 
