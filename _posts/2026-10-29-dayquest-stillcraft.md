@@ -17,7 +17,7 @@ Your habits, dailies and to-dos power a pixel hero. Finish things and it levels 
 
 {% include figure.html path=page.thumbnail_path %}
 
-**[Download the APK](https://github.com/bigdevwhale/dayquest/releases/latest/download/Dayquest.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/dayquest/) · [Source on GitHub](https://github.com/bigdevwhale/dayquest)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.dayquest)** · [Download the APK](https://github.com/bigdevwhale/dayquest/releases/latest/download/Dayquest.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/dayquest/) · [Source on GitHub](https://github.com/bigdevwhale/dayquest)
 
 ## What's inside
 
@@ -118,11 +118,11 @@ No. No accounts, no servers, no analytics, and the app has no internet permissio
 - **Permissions:** Notifications and start after reboot. No internet.
 - **License:** MIT
 
-1. Download the APK on your phone.
-1. Open it and allow installs from this source when Android asks.
+1. Install it from Google Play, or download the APK on your phone.
+1. If you took the APK, open it and allow installs from this source when Android asks.
 1. Create your hero and pick a few starter tasks. Or choose I already have a hero to bring progress from another phone.
 
-**[Download the APK](https://github.com/bigdevwhale/dayquest/releases/latest/download/Dayquest.apk)** · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/dayquest/) · [Source on GitHub](https://github.com/bigdevwhale/dayquest)
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=app.dayquest)** · [Download the APK](https://github.com/bigdevwhale/dayquest/releases/latest/download/Dayquest.apk) · [Stillcraft page](https://bigdevwhale.github.io/stillcraft/apps/dayquest/) · [Source on GitHub](https://github.com/bigdevwhale/dayquest)
 
 ---
 
