@@ -39,13 +39,13 @@ When the rite is done, a trail camera fires: a grainy night infrared frame with 
 
 ### Keepers, wanderers and rumours
 
-Keepers live in the district's most-of-all places, which the phone finds by itself: the oldest tree, the longest stairs, the longest bridge, the busiest crossroads. Wanderers come only with the weather: the Fogling walks the riverbank in fog, First-Snow follows your tracks in a snowfall, the Moon Dog runs the open places under a full moon. Every catch tells a rumour about someone else, so the bestiary grows as a web: the Bridgeling is afraid of the Gudgeon, the Keeper of the Long Stairs waits for someone carrying a Vanecrow.
+Keepers live in the district's most-of-all places, which the phone finds by itself: the oldest tree, the longest stairs, the longest bridge, the busiest crossroads. Wanderers come only with the weather: the Fogling walks the riverbank in fog, the Rainling hides under bus shelters in the rain, the Gustling stops by you in a strong wind, First-Snow follows your tracks in a snowfall, the Moon Dog runs the open places under a full moon. Every catch tells a rumour about someone else, so the bestiary grows as a web: the Bridgeling is afraid of the Gudgeon, the Keeper of the Long Stairs waits for someone carrying a Vanecrow.
 
 {% include figure.html path="blog/fieldscan-post/shot-4.jpg" caption="A riddle: someone is there." %}
 
 ### Memory and the archive
 
-The device holds 16 KB. Frames in memory wear a little every day, the grain grows and bands creep in, until you take them home and hand them in to the archive, where they stay as they were. New catches bring parts, and parts buy a longer antenna and more memory. A page of the device's manual explains each screen the first time you open it.
+The device holds 16 KB. Frames in memory wear a little every day, the grain grows and bands creep in, until you take them home and hand them in to the archive, where they stay as they were. New catches bring parts, and parts buy a longer antenna and more memory. A page of the device's manual explains each screen the first time you open it, and a dark theme turns the screen to night mode.
 
 {% include figure.html path="blog/fieldscan-post/shot-5.jpg" caption="Rumours: who tells about whom." %}
 
@@ -61,7 +61,7 @@ Turn on the quiet way: instead of a note, the rite asks you to keep still for tw
 
 **Why a beta?**
 
-There are 29 creatures so far; the rest of the planned two hundred will come in updates, and the rites need checking on real walks.
+There are 50 creatures so far; the rest of the planned two hundred will come in updates, and the rites need checking on real walks.
 
 ## Get it
 
