@@ -12,7 +12,7 @@ thumbnail_path: blog/mimic-post/hero.jpg
 
 Everyone who loves games has a pile. The Steam sale you couldn't resist, the board game a friend swore by, the RPG you were saving for a long holiday. Backlog trackers treat that pile as a debt: a percentage, a progress bar, a quiet reproach every time you open the app. I wanted the opposite. A room where the pile can just lie in its corner, and finishing a game feels like an event.
 
-So I put a mimic in the room. Mimic is a pixel shelf for video games, board games and tabletop RPGs, with a chest on the rug that eats the games you finish. It's free, with no ads and no account.
+So I put a mimic in the room. Mimic is a shelf for video games, board games and tabletop RPGs around a pixel room, with a chest on the rug that eats the games you finish. It's free, with no ads and no account.
 
 {% include figure.html path=page.thumbnail_path %}
 
@@ -26,7 +26,7 @@ Everything you own stands on wall shelves, each box drawn by what it came in: ca
 
 ### Adding a game
 
-Type a title and the mimic searches Wikidata and Wikipedia: the year, the maker, the players and the cover come in, and the cover is redrawn in pixels to sit with the room (there's a setting to show covers as they are). There are popular genres for each kind, 28 for video games, 21 for board games and 14 for tabletop RPGs, and you can make your own genres and subgenres. Or just snap the box with the phone's camera.
+Type a title and the mimic searches Wikidata and Wikipedia: the year, the maker, the players and the cover come in, as it is (there's a setting to redraw covers in pixels, to sit with the room). There are popular genres for each kind, 28 for video games, 21 for board games and 14 for tabletop RPGs, and you can make your own genres and subgenres. Or just snap the box with the phone's camera.
 
 {% include figure.html path="blog/mimic-post/shot-1.jpg" caption="Every box, searchable." %}
 
@@ -48,7 +48,7 @@ Finished? Write one line, pick what the game gave you (hooked me, rested, I'll d
 
 ### The chronicle and the bestiary
 
-The chronicle counts the year: games and hours by month, what the mimic ate, your average rating and your game of the year, how long a box usually waits before it's opened. The bestiary collects everyone who has turned up in the room, and keeps the rest as silhouettes with a hint.
+The chronicle counts the year in four tabs: the year day by day and your longest streak, games and hours by month, the weekdays and hours you play, what the mimic ate, your ratings and your game of the year, how the pile grows. Any of it, or the room, the mimic, a game or a creature, can go out as a postcard. The bestiary collects everyone who has turned up in the room, and keeps the rest as silhouettes with a hint.
 
 {% include figure.html path="blog/mimic-post/shot-4.jpg" caption="A year in games." %}
 
