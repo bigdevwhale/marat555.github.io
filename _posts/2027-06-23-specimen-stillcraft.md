@@ -11,7 +11,7 @@ thumbnail_path: blog/specimen-post/hero.jpg
 
 A friend with a cat once said her cat behaves like an alien sent to study us – so why not study it back? Specimen takes that literally. Your cat, dog or parrot is an envoy from another planet, and you are the xenologist assigned to observe it. You log its mood, appetite and weight, photograph what it does, try new foods as small experiments, and every Sunday the bureau files a typed report with your photos, captions and conclusions.
 
-Under the joke it's a proper pet diary: care reminders made for the breed, red flags that mean «see a vet today», and a PDF extract to bring to the clinic. It's free, with no ads, no account and no internet access at all. This is the first version.
+Under the joke it's a proper pet diary: care reminders made for the breed, red flags that mean «see a vet today», and a PDF extract to bring to the clinic. It's free, with no ads, no account and no server.
 
 {% include figure.html path=page.thumbnail_path %}
 
@@ -51,6 +51,10 @@ Forty-five short lessons about body language, stress, play, food and health, eac
 
 {% include figure.html path="blog/specimen-post/shot-4.jpg" caption="A lesson: how to read a tail, and a task for the evening." %}
 
+### Two phones, one diary
+
+Pets usually have more than one person looking after them. Connect a second phone with a QR, and from then on the two phones find each other on the home Wi-Fi and swap every entry, photo and portrait directly, encrypted, with no server in between. If you like, they keep in step in the background too, but only on the network where they have met.
+
 ## Good to know
 
 **Is it a vet app?**
@@ -61,14 +65,18 @@ No, it's a diary. It notices worrying patterns and tells you when to see a vet, 
 
 Yes. Besides cats and dogs there are parrots, rabbits and other rodents, ferrets and reptiles, each with their own breeds, care and behaviour atlas.
 
-**It's the first version. What if something breaks?**
+**Can two of us keep the diary?**
+
+Yes: Settings → Second phone. One phone shows a QR, the other scans it.
+
+**It's a new app. What if something breaks?**
 
 Please tell me: Settings → StillCraft has buttons to report a bug or suggest an idea through the StillCraft bot.
 
 ## Get it
 
 - **Requires:** Android 9 (API 28) or newer.
-- **Permissions:** no internet at all; notifications for reminders. The phone's own camera opens only when you photograph your pet. No account, no ads, no analytics.
+- **Permissions:** the local network, only to reach your second phone on the home Wi-Fi; the camera, only to scan its QR; notifications for reminders. Pet photos come from the phone's own camera app. No account, no ads, no analytics.
 - **License:** MIT. Fonts: Lora, Rubik and IBM Plex Mono (OFL).
 
 1. Download the APK on the phone.
